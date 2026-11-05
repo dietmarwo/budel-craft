@@ -1,0 +1,44 @@
+{
+  "method": "de",
+  "case": "medium",
+  "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+  "requested_evaluations": 24,
+  "actual_evaluations": 24,
+  "requested_proposals_per_trial": 9000,
+  "training_proposals": 216000,
+  "training": {
+    "seed": 1,
+    "seated": 211,
+    "area": 1313510.0653000006,
+    "strict_valid": true,
+    "proposals": 9000,
+    "loss": 0.11586751083870239
+  },
+  "holdout": {
+    "seed": 1000004,
+    "seated": 197,
+    "area": 1305065.613050001,
+    "strict_valid": true,
+    "proposals": 9000,
+    "loss": 0.12155152863546803
+  },
+  "fixed_holdout": {
+    "seed": 1000004,
+    "seated": 165,
+    "area": 1265983.7746500007,
+    "strict_valid": true,
+    "proposals": 9000,
+    "loss": 0.14785777780585396
+  },
+  "selected_policy": {
+    "stock_area": 0.7753767385626915,
+    "box_area": 0.0,
+    "extent": 0.0,
+    "rect_waste": 0.6891847944032476,
+    "rect_height": 0.8283976577270771,
+    "contact_rate": 0.310269727478458,
+    "gap_trials": 77,
+    "rebuild_size": 3
+  },
+  "runtime_s": 2.859078378
+}

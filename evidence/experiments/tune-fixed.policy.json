@@ -1,0 +1,10 @@
+{
+  "stock_area": 0.32,
+  "box_area": 0.58,
+  "extent": 0.1,
+  "rect_waste": 0.3,
+  "rect_height": 0.12,
+  "contact_rate": 0.28,
+  "gap_trials": 120,
+  "rebuild_size": 8
+}

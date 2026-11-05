@@ -1,0 +1,17 @@
+{"area":101629.74524999998,"discovered_s":0.557272334,"elapsed_s":0.557762756,"proposals":128,"seated":128,"stage":"rectangle-checkpoint"}
+{"area":197397.94395000004,"discovered_s":0.560811815,"elapsed_s":0.565816171,"proposals":359,"seated":256,"stage":"rectangle-checkpoint"}
+{"area":288641.9715499999,"discovered_s":0.567096816,"elapsed_s":0.574260496,"proposals":528,"seated":384,"stage":"rectangle-checkpoint"}
+{"area":376799.6982499998,"discovered_s":0.57266833,"elapsed_s":0.584472156,"proposals":740,"seated":512,"stage":"rectangle-checkpoint"}
+{"area":462031.23234999983,"discovered_s":0.579447031,"elapsed_s":0.592272083,"proposals":844,"seated":640,"stage":"rectangle-checkpoint"}
+{"area":544279.2931499997,"discovered_s":0.586811832,"elapsed_s":0.602940834,"proposals":972,"seated":768,"stage":"rectangle-checkpoint"}
+{"area":623016.2276000006,"discovered_s":0.595674139,"elapsed_s":0.613105306,"proposals":1051,"seated":896,"stage":"rectangle-checkpoint"}
+{"area":700020.1281500004,"discovered_s":0.60759373,"elapsed_s":0.63208307,"proposals":1180,"seated":1024,"stage":"rectangle-checkpoint"}
+{"area":774467.1303500007,"discovered_s":0.624567559,"elapsed_s":0.692909521,"proposals":1299,"seated":1152,"stage":"rectangle-checkpoint"}
+{"area":845197.193600001,"discovered_s":0.687318734,"elapsed_s":0.755054778,"proposals":1473,"seated":1280,"stage":"rectangle-checkpoint"}
+{"area":912356.6305500012,"discovered_s":0.735589896,"elapsed_s":0.778602336,"proposals":1665,"seated":1408,"stage":"rectangle-checkpoint"}
+{"area":975680.6547000005,"discovered_s":0.764124107,"elapsed_s":0.788813202,"proposals":1691,"seated":1536,"stage":"rectangle-checkpoint"}
+{"area":1032763.87745,"discovered_s":0.777942694,"elapsed_s":0.805905065,"proposals":1814,"seated":1664,"stage":"rectangle-checkpoint"}
+{"area":1071868.3872000016,"discovered_s":0.797969603,"elapsed_s":0.829054542,"proposals":1992,"seated":1792,"stage":"rectangle-checkpoint"}
+{"area":1083044.4505000007,"discovered_s":0.815152289,"elapsed_s":0.860899343,"proposals":2127,"seated":1920,"stage":"rectangle-checkpoint"}
+{"area":1091387.6383000005,"discovered_s":0.833973881,"elapsed_s":0.880204888,"proposals":2127,"seated":2048,"stage":"rectangle-checkpoint"}
+{"area":1095405.4393,"discovered_s":0.850619182,"elapsed_s":0.896992872,"proposals":2127,"seated":2127,"stage":"rectangles"}

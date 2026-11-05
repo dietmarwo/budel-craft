@@ -1,0 +1,80 @@
+{
+  "schema_version": "execution.command/0.1",
+  "argv": [
+    "./budel-bin",
+    "solve",
+    "case.json",
+    "--time-limit",
+    "1.0",
+    "--workers",
+    "1",
+    "--seed",
+    "1",
+    "--memory-limit-mib",
+    "1024",
+    "--output",
+    "answer.json",
+    "--run-dir",
+    "run",
+    "--eval-limit",
+    "50"
+  ],
+  "env": {},
+  "resources": {
+    "cpu_slots": 1
+  },
+  "limits": {
+    "wall_seconds": 1.75,
+    "grace_seconds": 1
+  },
+  "replay": "never",
+  "inputs": [
+    {
+      "path": "budel-bin",
+      "file": "budel-bin",
+      "sha256": "c8a57217f69b73aca9ba24ac67595f6a955b34af2f8bef5da029cccadc0c8e33",
+      "bytes": 1476088,
+      "executable": true
+    },
+    {
+      "path": "case.json",
+      "file": "case.json",
+      "sha256": "f0181bafa8f64a8fc78d37578a69c48d4e54855b87715c149830435a33b0135c",
+      "bytes": 932,
+      "executable": false
+    }
+  ],
+  "outputs": [
+    {
+      "name": "answer",
+      "path": "answer.json",
+      "max_bytes": 16777216,
+      "required": false
+    },
+    {
+      "name": "metrics",
+      "path": "run/packing_metrics.json",
+      "max_bytes": 1048576,
+      "required": true
+    },
+    {
+      "name": "strict",
+      "path": "run/strict.json",
+      "max_bytes": 1048576,
+      "required": true
+    },
+    {
+      "name": "checkpoint",
+      "path": "run/checkpoint.json",
+      "max_bytes": 16777216,
+      "required": true
+    },
+    {
+      "name": "progress",
+      "path": "run/progress.jsonl",
+      "max_bytes": 1048576,
+      "required": true
+    }
+  ],
+  "request_key": "budel-7d24757f93f395ebe98163e8"
+}

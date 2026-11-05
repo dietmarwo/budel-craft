@@ -1,0 +1,8 @@
+{"area":136580.64774999997,"discovered_s":0.155777212,"elapsed_s":0.159752083,"proposals":197,"seated":128,"stage":"rectangle-checkpoint"}
+{"area":250335.5825999999,"discovered_s":0.163365947,"elapsed_s":0.167401494,"proposals":297,"seated":256,"stage":"rectangle-checkpoint"}
+{"area":359911.6116999999,"discovered_s":0.174380347,"elapsed_s":0.178268497,"proposals":411,"seated":384,"stage":"rectangle-checkpoint"}
+{"area":459525.12260000006,"discovered_s":0.190916328,"elapsed_s":0.193550988,"proposals":512,"seated":512,"stage":"rectangle-checkpoint"}
+{"area":553099.36185,"discovered_s":0.205736334,"elapsed_s":0.207712616,"proposals":640,"seated":640,"stage":"rectangle-checkpoint"}
+{"area":640662.9565999996,"discovered_s":0.220451785,"elapsed_s":0.222705665,"proposals":768,"seated":768,"stage":"rectangle-checkpoint"}
+{"area":719792.6574499996,"discovered_s":0.242352158,"elapsed_s":0.246940351,"proposals":896,"seated":896,"stage":"rectangle-checkpoint"}
+{"area":777045.8169499998,"discovered_s":0.268175175,"elapsed_s":0.274354505,"proposals":1008,"seated":1008,"stage":"rectangles"}

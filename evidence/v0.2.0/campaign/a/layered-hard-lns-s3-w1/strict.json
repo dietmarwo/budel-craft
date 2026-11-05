@@ -1,0 +1,13 @@
+{
+  "strict_valid": true,
+  "complete": false,
+  "seated": 1156,
+  "available": 1184,
+  "area": 1448493.1194500024,
+  "coverage": 50.294899980902855,
+  "available_fraction": 0.9674947193213607,
+  "certified_gap": 3.000001,
+  "pair_checks": 2540,
+  "checked_all": true,
+  "violations": []
+}

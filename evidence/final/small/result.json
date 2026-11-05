@@ -1,0 +1,186 @@
+{
+  "spec": {
+    "case": "small",
+    "case_sha256": "44ffd9746de20b92288665b528029d7834f0d72c366ac1ed356120c9f9f611e0",
+    "binary_sha256": "c8a57217f69b73aca9ba24ac67595f6a955b34af2f8bef5da029cccadc0c8e33",
+    "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+    "algorithm": "lns",
+    "seed": 1,
+    "workers": 1,
+    "seconds": 6,
+    "memory_mib": 1024,
+    "judge_seconds": 170.0,
+    "eval_limit": null,
+    "solver_flags": [],
+    "policy_sha256": null,
+    "reference": true,
+    "engine": "native",
+    "pin_cpu": true,
+    "external_version": null,
+    "adapter_sha256": null
+  },
+  "execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 0.39063202500983607,
+    "cpu_s": 0.13591199999999998,
+    "leader_peak_rss_bytes": 73547776,
+    "sampled_group_peak_rss_bytes": 73547776,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 4294967296,
+    "cpu_slots": 1
+  },
+  "metrics": {
+    "case": "small",
+    "case_sha256": "44ffd9746de20b92288665b528029d7834f0d72c366ac1ed356120c9f9f611e0",
+    "config_sha256": "7ad7978740a1e4a475ea75757c6cf40ff70bce1ad7d9ae830be52ecad0a34165",
+    "config": {
+      "algorithm": "lns",
+      "seed": 1,
+      "workers": 1,
+      "cache_bytes": 67108864,
+      "edge_tree": true,
+      "pair_hints": true,
+      "policy": {
+        "stock_area": 0.32,
+        "box_area": 0.58,
+        "extent": 0.1,
+        "rect_waste": 0.3,
+        "rect_height": 0.12,
+        "contact_rate": 0.28,
+        "gap_trials": 120,
+        "rebuild_size": 8
+      }
+    },
+    "termination": "available-area-complete",
+    "requested_seconds": 6.0,
+    "runtime_s": 0.333011783,
+    "cumulative_s": 0.333011783,
+    "preprocess_s": 0.017661164,
+    "overshoot_s": 0.0,
+    "requested_proposals": null,
+    "proposals": 9089,
+    "cumulative_proposals": 9089,
+    "first_complete_s": 0.239525156,
+    "best": {
+      "strict_valid": true,
+      "complete": true,
+      "seated": 40,
+      "available": 40,
+      "area": 533665.4096,
+      "coverage": 23.289927974164268,
+      "available_fraction": 1.0,
+      "certified_gap": 3.000001,
+      "pair_checks": 50,
+      "checked_all": true,
+      "violations": []
+    },
+    "certified_answer_written": true,
+    "stats": {
+      "kernel": {
+        "candidates": 9089,
+        "pairs": 13204,
+        "nodes": 344444,
+        "ray_nodes": 105782,
+        "edges": 16825,
+        "disc_rejections": 576,
+        "orientations": 2446,
+        "cache_hits": 4582,
+        "cache_peak_bytes": 34667312
+      },
+      "attempts": 4,
+      "rectangle_insertions": 138,
+      "gap_insertions": 11,
+      "move_trials": 3444,
+      "moves": 235,
+      "rebuild_trials": 18,
+      "rebuilds": 8,
+      "repair_trials": 0,
+      "repairs": 0,
+      "fcmaes_evaluations": 0
+    }
+  },
+  "strict": {
+    "strict_valid": true,
+    "complete": true,
+    "seated": 40,
+    "available": 40,
+    "area": 533665.4096,
+    "coverage": 23.289927974164268,
+    "available_fraction": 1.0,
+    "certified_gap": 3.000001,
+    "pair_checks": 50,
+    "checked_all": true,
+    "violations": []
+  },
+  "judge": {
+    "author": "budel-craft",
+    "below_target": {
+      "half": 0,
+      "quarter": 0,
+      "target": 0
+    },
+    "border_free_share": 32.6,
+    "case": "small",
+    "coverage": 23.29,
+    "coverage_usable": 25.0,
+    "declared": {
+      "budget": null,
+      "machine": "linux x86_64 (1 search workers)",
+      "runtime_s": 0.308315101
+    },
+    "ink_area": 533665.4,
+    "pairs_checked": 74,
+    "regime": "uniform",
+    "runtime_s": 10.21,
+    "seated": 40,
+    "seated_by_class": [
+      {
+        "available": 36,
+        "seated": 36,
+        "size": 287.4
+      },
+      {
+        "available": 3,
+        "seated": 3,
+        "size": 244.3
+      },
+      {
+        "available": 1,
+        "seated": 1,
+        "size": 207.7
+      }
+    ],
+    "shapes": 40,
+    "tightest": 3.001,
+    "valid": true,
+    "violations": []
+  },
+  "answer_sha256": "fa356edeb1da8096cd371f2648071e21a64cfb7a0834f77a793c07fa9a1cc0f0",
+  "validation_pending": false,
+  "eligible": true,
+  "strict_execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 0.07300236899754964,
+    "cpu_s": 0.015222999999999999,
+    "leader_peak_rss_bytes": 73551872,
+    "sampled_group_peak_rss_bytes": 73551872,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 4294967296,
+    "cpu_slots": 1,
+    "terminal": true
+  },
+  "judge_execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 10.875246652998612,
+    "cpu_s": 4.635792,
+    "leader_peak_rss_bytes": 73551872,
+    "sampled_group_peak_rss_bytes": 73551872,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 4294967296,
+    "cpu_slots": 1,
+    "terminal": true
+  }
+}

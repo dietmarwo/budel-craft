@@ -1,0 +1,5 @@
+{"area":462031.23234999983,"discovered_s":0.285508898,"elapsed_s":0.290657199,"proposals":763,"seated":640,"stage":"rectangle-checkpoint"}
+{"area":774467.1303500007,"discovered_s":0.313067427,"elapsed_s":0.323103176,"proposals":1291,"seated":1152,"stage":"rectangle-checkpoint"}
+{"area":975680.6547000005,"discovered_s":0.340628037,"elapsed_s":0.353748872,"proposals":1695,"seated":1536,"stage":"rectangle-checkpoint"}
+{"area":1091387.6383000005,"discovered_s":0.379738895,"elapsed_s":0.394614241,"proposals":2120,"seated":2048,"stage":"rectangle-checkpoint"}
+{"area":1095405.4393,"discovered_s":0.395619968,"elapsed_s":0.439692751,"proposals":40349,"seated":2127,"stage":"rectangles"}

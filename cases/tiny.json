@@ -1,0 +1,77 @@
+{
+ "case": "tiny",
+ "source": "hand-written, so the formats can be read on one screen",
+ "mix": {
+  "regime": "layered",
+  "size_classes": {
+   "20": 1,
+   "10": 1
+  },
+  "growth_steps": {},
+  "hard_share": 0.0,
+  "reaches": {}
+ },
+ "runtime_note": "hand-written: no runtime of ours to compare against",
+ "plane": {
+  "w": 100.0,
+  "h": 100.0,
+  "margin": 5.0
+ },
+ "rules": {
+  "min_channel": 2.0,
+  "margin": 5.0,
+  "poses": "eight",
+  "mirror_allowed": true,
+  "must_seat_all": true,
+  "body": "rest",
+  "tolerance": 0.01
+ },
+ "shapes": [
+  {
+   "id": "a",
+   "ring": [
+    [
+     -10,
+     -10
+    ],
+    [
+     10,
+     -10
+    ],
+    [
+     10,
+     10
+    ],
+    [
+     -10,
+     10
+    ]
+   ],
+   "holes": [],
+   "area": 400.0
+  },
+  {
+   "id": "b",
+   "ring": [
+    [
+     -5,
+     -5
+    ],
+    [
+     5,
+     -5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     -5,
+     5
+    ]
+   ],
+   "holes": [],
+   "area": 100.0
+  }
+ ]
+}

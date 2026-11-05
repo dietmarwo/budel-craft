@@ -1,0 +1,53 @@
+{
+  "author": "budel-craft",
+  "below_target": {
+    "half": 0,
+    "quarter": 0,
+    "target": 0
+  },
+  "border_free_share": 34.9,
+  "case": "large",
+  "coverage": 47.81,
+  "coverage_usable": 51.32,
+  "declared": {
+    "budget": null,
+    "machine": "linux x86_64 (1 search workers)",
+    "runtime_s": 0.657148275
+  },
+  "ink_area": 1095405.4,
+  "pairs_checked": 7436,
+  "regime": "layered",
+  "runtime_s": 60.54,
+  "seated": 2127,
+  "seated_by_class": [
+    {
+      "available": 1692,
+      "seated": 1692,
+      "size": 33.0
+    },
+    {
+      "available": 26,
+      "seated": 26,
+      "size": 28.0
+    },
+    {
+      "available": 33,
+      "seated": 33,
+      "size": 23.8
+    },
+    {
+      "available": 36,
+      "seated": 36,
+      "size": 20.3
+    },
+    {
+      "available": 340,
+      "seated": 340,
+      "size": 19.8
+    }
+  ],
+  "shapes": 2127,
+  "tightest": 2.8,
+  "valid": true,
+  "violations": []
+}

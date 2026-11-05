@@ -1,0 +1,242 @@
+{
+  "spec": {
+    "case": "layered-hard",
+    "case_sha256": "f60887e32e825d46e2b74bac12ed6fded060bf20a8fdf9d2e3ee9797e83d0688",
+    "binary_sha256": "4960464367b82ad93842c67c56ffec8dc26d9a0007529657b81be5b49ce1ba7b",
+    "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+    "algorithm": "lns",
+    "seed": 2,
+    "workers": 1,
+    "seconds": 65,
+    "memory_mib": 1024,
+    "judge_seconds": 240.0,
+    "eval_limit": null,
+    "solver_flags": [],
+    "policy_sha256": null,
+    "reference": true,
+    "engine": "native",
+    "pin_cpu": true,
+    "external_version": null,
+    "adapter_sha256": null
+  },
+  "execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 64.39597208499981,
+    "cpu_s": 58.575165999999996,
+    "leader_peak_rss_bytes": 123166720,
+    "sampled_group_peak_rss_bytes": 123166720,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      0
+    ]
+  },
+  "metrics": {
+    "case": "layered-hard",
+    "case_sha256": "f60887e32e825d46e2b74bac12ed6fded060bf20a8fdf9d2e3ee9797e83d0688",
+    "config_sha256": "3c6d6fcb1f79d253681ee4024a11167cd16673eb696270135af5f1c34c814634",
+    "config": {
+      "algorithm": "lns",
+      "seed": 2,
+      "workers": 1,
+      "cache_bytes": 67108864,
+      "edge_tree": true,
+      "pair_hints": true,
+      "policy": {
+        "stock_area": 0.32,
+        "box_area": 0.58,
+        "extent": 0.1,
+        "rect_waste": 0.3,
+        "rect_height": 0.12,
+        "contact_rate": 0.28,
+        "gap_trials": 120,
+        "rebuild_size": 8,
+        "blocker_weight": 0.36,
+        "restarts": 5,
+        "slide_sweeps": 3,
+        "late_length": 0,
+        "separate_moves": 600,
+        "best_of": 1,
+        "pocket_trials": 16,
+        "rescue_after": 2
+      },
+      "features": {
+        "slide": true,
+        "pockets": true,
+        "late_acceptance": true,
+        "separate": true,
+        "share": true
+      }
+    },
+    "termination": "time-limit",
+    "requested_seconds": 65.0,
+    "runtime_s": 64.352955897,
+    "cumulative_s": 64.352955897,
+    "preprocess_s": 0.225157759,
+    "overshoot_s": 0.0,
+    "requested_proposals": null,
+    "proposals": 10967798,
+    "cumulative_proposals": 10967798,
+    "first_complete_s": null,
+    "best": {
+      "strict_valid": true,
+      "complete": false,
+      "seated": 1153,
+      "available": 1184,
+      "area": 1456422.7881000026,
+      "coverage": 50.57023569791676,
+      "available_fraction": 0.9727911977387081,
+      "certified_gap": 3.000001,
+      "pair_checks": 2581,
+      "checked_all": true,
+      "violations": []
+    },
+    "certified_answer_written": true,
+    "candidate_validations": 197,
+    "superseded_candidates": 213,
+    "stats": {
+      "kernel": {
+        "candidates": 10967798,
+        "pairs": 17223118,
+        "nodes": 435276230,
+        "ray_nodes": 103772825,
+        "edges": 53728913,
+        "disc_rejections": 1315352,
+        "orientations": 1407810,
+        "cache_hits": 2020389,
+        "cache_peak_bytes": 67108864
+      },
+      "attempts": 5,
+      "rectangle_insertions": 1690,
+      "gap_insertions": 3834,
+      "move_trials": 7665324,
+      "moves": 1944,
+      "rebuild_trials": 6867,
+      "rebuilds": 252,
+      "repair_trials": 0,
+      "repairs": 0,
+      "fcmaes_evaluations": 0,
+      "slides": 6068,
+      "pocket_trials": 19830,
+      "pocket_insertions": 8,
+      "late_accepts": 0,
+      "separation_trials": 27,
+      "separations": 0,
+      "separation_moves": 1842,
+      "migrations": 0,
+      "persistent_rounds": 149,
+      "incumbent_resets": 0
+    }
+  },
+  "strict": {
+    "strict_valid": true,
+    "complete": false,
+    "seated": 1153,
+    "available": 1184,
+    "area": 1456422.7881000026,
+    "coverage": 50.57023569791676,
+    "available_fraction": 0.9727911977387081,
+    "certified_gap": 3.000001,
+    "pair_checks": 2581,
+    "checked_all": true,
+    "violations": []
+  },
+  "judge": {
+    "author": "budel-craft",
+    "below_target": {
+      "half": 0,
+      "quarter": 0,
+      "target": 0
+    },
+    "border_free_share": 33.7,
+    "case": "layered-hard",
+    "coverage": 50.57,
+    "coverage_usable": 53.82,
+    "declared": {
+      "budget": null,
+      "machine": "linux x86_64 (1 search workers)",
+      "runtime_s": 64.351009207
+    },
+    "ink_area": 1456422.8,
+    "pairs_checked": 3569,
+    "regime": "layered",
+    "runtime_s": 30.31,
+    "seated": 1153,
+    "seated_by_class": [
+      {
+        "available": 238,
+        "seated": 235,
+        "size": 124.8
+      },
+      {
+        "available": 2,
+        "seated": 1,
+        "size": 106.1
+      },
+      {
+        "available": 1,
+        "seated": 0,
+        "size": 76.6
+      },
+      {
+        "available": 87,
+        "seated": 67,
+        "size": 74.9
+      },
+      {
+        "available": 149,
+        "seated": 144,
+        "size": 44.9
+      },
+      {
+        "available": 281,
+        "seated": 280,
+        "size": 27.0
+      },
+      {
+        "available": 426,
+        "seated": 426,
+        "size": 16.2
+      }
+    ],
+    "shapes": 1184,
+    "tightest": 3.0,
+    "valid": true,
+    "violations": []
+  },
+  "answer_sha256": "d9dd14229dd1fe3c3ce53bbb229f42db385c1bde96c8be925fcf6cf8efc1f0f2",
+  "validation_pending": false,
+  "eligible": true,
+  "strict_execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 0.26360558900023534,
+    "cpu_s": 0.21487699999999998,
+    "leader_peak_rss_bytes": 77414400,
+    "sampled_group_peak_rss_bytes": 77414400,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      0
+    ],
+    "terminal": true
+  },
+  "judge_execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 30.651255173999743,
+    "cpu_s": 27.624668999999997,
+    "leader_peak_rss_bytes": 142233600,
+    "sampled_group_peak_rss_bytes": 142233600,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      0
+    ],
+    "terminal": true
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "planned_runs": 1,
+  "completed_runs": 1,
+  "pending_validations": 0,
+  "runs": [
+    {
+      "spec": {
+        "case": "medium",
+        "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+        "binary_sha256": "ec30a42d5c0e6f964113fa974741fa721dde19bfa257f13c89caf29049cc20d0",
+        "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+        "algorithm": "lns",
+        "seed": 1,
+        "workers": 4,
+        "seconds": 2.0,
+        "memory_mib": 1024,
+        "judge_seconds": 120,
+        "eval_limit": null,
+        "solver_flags": [],
+        "policy_sha256": null,
+        "reference": false,
+        "engine": "native",
+        "pin_cpu": true,
+        "external_version": null,
+        "adapter_sha256": null
+      },
+      "execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 1.967716144004953,
+        "cpu_s": 5.848229,
+        "leader_peak_rss_bytes": 97366016,
+        "sampled_group_peak_rss_bytes": 97366016,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 4294967296,
+        "cpu_slots": 4
+      },
+      "metrics": {
+        "case": "medium",
+        "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+        "config_sha256": "bc79548d4a1627231e7962a29b30d32ca9c9ffd1e4c87019301e91fdc39c7c1c",
+        "config": {
+          "algorithm": "lns",
+          "seed": 1,
+          "workers": 4,
+          "cache_bytes": 67108864,
+          "edge_tree": true,
+          "pair_hints": true,
+          "policy": {
+            "stock_area": 0.32,
+            "box_area": 0.58,
+            "extent": 0.1,
+            "rect_waste": 0.3,
+            "rect_height": 0.12,
+            "contact_rate": 0.28,
+            "gap_trials": 120,
+            "rebuild_size": 8
+          }
+        },
+        "termination": "time-limit",
+        "requested_seconds": 2.0,
+        "runtime_s": 1.926044937,
+        "cumulative_s": 1.926044937,
+        "preprocess_s": 0.115029114,
+        "overshoot_s": 0.0,
+        "requested_proposals": null,
+        "proposals": 249734,
+        "cumulative_proposals": 249734,
+        "first_complete_s": null,
+        "best": {
+          "strict_valid": true,
+          "complete": false,
+          "seated": 246,
+          "available": 312,
+          "area": 1324891.1495000008,
+          "coverage": 46.003164913194475,
+          "available_fraction": 0.8917931737414361,
+          "certified_gap": 3.000001,
+          "pair_checks": 377,
+          "checked_all": true,
+          "violations": []
+        },
+        "certified_answer_written": true,
+        "stats": {
+          "kernel": {
+            "candidates": 249734,
+            "pairs": 349008,
+            "nodes": 5826439,
+            "ray_nodes": 2350246,
+            "edges": 424113,
+            "disc_rejections": 67511,
+            "orientations": 145561,
+            "cache_hits": 90793,
+            "cache_peak_bytes": 16777216
+          },
+          "attempts": 9,
+          "rectangle_insertions": 1166,
+          "gap_insertions": 985,
+          "move_trials": 21504,
+          "moves": 1541,
+          "rebuild_trials": 318,
+          "rebuilds": 79,
+          "repair_trials": 0,
+          "repairs": 0,
+          "fcmaes_evaluations": 0
+        }
+      },
+      "strict": {
+        "strict_valid": true,
+        "complete": false,
+        "seated": 246,
+        "available": 312,
+        "area": 1324891.1495000008,
+        "coverage": 46.003164913194475,
+        "available_fraction": 0.8917931737414361,
+        "certified_gap": 3.000001,
+        "pair_checks": 377,
+        "checked_all": true,
+        "violations": []
+      },
+      "judge": null,
+      "answer_sha256": "586ed557e59eb78cc2ea1b6ab6d56c82c117a3ccb28f53ecf84831701f5e77fa",
+      "validation_pending": false,
+      "eligible": true,
+      "strict_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 0.08972443200764246,
+        "cpu_s": 0.08312,
+        "leader_peak_rss_bytes": 24375296,
+        "sampled_group_peak_rss_bytes": 24375296,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 4294967296,
+        "cpu_slots": 1,
+        "terminal": true
+      }
+    }
+  ]
+}

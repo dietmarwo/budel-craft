@@ -1,0 +1,22 @@
+{
+  "case": "tiny",
+  "placements": [
+    {
+      "id": "a",
+      "x": 19.142137623730953,
+      "y": 19.142137623730953,
+      "rot": 45.0,
+      "mirror": false
+    },
+    {
+      "id": "b",
+      "x": 42.35534605932738,
+      "y": 12.071069811865476,
+      "rot": 45.0,
+      "mirror": false
+    }
+  ],
+  "runtime_s": 0.003213757,
+  "machine": "linux x86_64 (1 search workers)",
+  "author": "budel-craft"
+}

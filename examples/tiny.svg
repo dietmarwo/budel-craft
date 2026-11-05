@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<title>tiny</title>
+<rect width="100%" height="100%" fill="#f4eedf"/>
+<rect x="5" y="5" width="90" height="90" fill="none" stroke="#aa5146"/>
+<g><title>a</title>
+<path fill="#26363d" fill-rule="evenodd" d="M 19.1421376 5.0000020 L 33.2842732 19.1421376 L 19.1421376 33.2842732 L 5.0000020 19.1421376 Z "/>
+</g>
+<g><title>b</title>
+<path fill="#26363d" fill-rule="evenodd" d="M 42.3553461 5.0000020 L 49.4264139 12.0710698 L 42.3553461 19.1421376 L 35.2842782 12.0710698 Z "/>
+</g>
+</svg>

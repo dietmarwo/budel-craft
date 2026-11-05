@@ -1,0 +1,1414 @@
+{
+  "planned_runs": 6,
+  "completed_runs": 6,
+  "pending_validations": 0,
+  "runs": [
+    {
+      "spec": {
+        "case": "medium",
+        "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+        "binary_sha256": "45697caa7908acd8289b6cdf3742794b87889daf0cc22104e312d44c7157ed04",
+        "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+        "algorithm": "lns",
+        "seed": 1,
+        "workers": 1,
+        "seconds": 14,
+        "memory_mib": 1024,
+        "judge_seconds": 240.0,
+        "eval_limit": null,
+        "solver_flags": [],
+        "policy_sha256": null,
+        "reference": true,
+        "engine": "native",
+        "pin_cpu": true,
+        "external_version": null,
+        "adapter_sha256": null
+      },
+      "execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 12.878957083999921,
+        "cpu_s": 12.209692,
+        "leader_peak_rss_bytes": 91303936,
+        "sampled_group_peak_rss_bytes": 91303936,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ]
+      },
+      "metrics": {
+        "case": "medium",
+        "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+        "config_sha256": "b0b8b3eec4a73e9d1c7079b445fe6e4a25521a4d5341263730acf17bea52c9fa",
+        "config": {
+          "algorithm": "lns",
+          "seed": 1,
+          "workers": 1,
+          "cache_bytes": 67108864,
+          "edge_tree": true,
+          "pair_hints": true,
+          "policy": {
+            "stock_area": 0.32,
+            "box_area": 0.58,
+            "extent": 0.1,
+            "rect_waste": 0.3,
+            "rect_height": 0.12,
+            "contact_rate": 0.28,
+            "gap_trials": 120,
+            "rebuild_size": 8,
+            "blocker_weight": 0.36,
+            "restarts": 5,
+            "slide_sweeps": 3,
+            "late_length": 0,
+            "separate_moves": 600,
+            "best_of": 1,
+            "pocket_trials": 16,
+            "rescue_after": 2
+          },
+          "features": {
+            "slide": true,
+            "pockets": true,
+            "late_acceptance": true,
+            "separate": true,
+            "share": true
+          }
+        },
+        "termination": "available-area-complete",
+        "requested_seconds": 14.0,
+        "runtime_s": 12.854281358,
+        "cumulative_s": 12.854281358,
+        "preprocess_s": 0.06847652,
+        "overshoot_s": 0.0,
+        "requested_proposals": null,
+        "proposals": 4164172,
+        "cumulative_proposals": 4164172,
+        "first_complete_s": 12.852470228,
+        "best": {
+          "strict_valid": true,
+          "complete": true,
+          "seated": 312,
+          "available": 312,
+          "area": 1485648.4536000001,
+          "coverage": 51.585015750000004,
+          "available_fraction": 1.0,
+          "certified_gap": 3.000001,
+          "pair_checks": 692,
+          "checked_all": true,
+          "violations": []
+        },
+        "certified_answer_written": true,
+        "candidate_validations": 118,
+        "superseded_candidates": 88,
+        "stats": {
+          "kernel": {
+            "candidates": 4164172,
+            "pairs": 6268605,
+            "nodes": 154133923,
+            "ray_nodes": 34451617,
+            "edges": 14643802,
+            "disc_rejections": 479694,
+            "orientations": 377154,
+            "cache_hits": 935840,
+            "cache_peak_bytes": 67108864
+          },
+          "attempts": 5,
+          "rectangle_insertions": 662,
+          "gap_insertions": 671,
+          "move_trials": 3076346,
+          "moves": 826,
+          "rebuild_trials": 3243,
+          "rebuilds": 200,
+          "repair_trials": 0,
+          "repairs": 0,
+          "fcmaes_evaluations": 0,
+          "slides": 1519,
+          "pocket_trials": 17931,
+          "pocket_insertions": 5,
+          "late_accepts": 0,
+          "separation_trials": 74,
+          "separations": 4,
+          "separation_moves": 2113,
+          "migrations": 0,
+          "persistent_rounds": 219,
+          "incumbent_resets": 0
+        }
+      },
+      "strict": {
+        "strict_valid": true,
+        "complete": true,
+        "seated": 312,
+        "available": 312,
+        "area": 1485648.4536000001,
+        "coverage": 51.585015750000004,
+        "available_fraction": 1.0,
+        "certified_gap": 3.000001,
+        "pair_checks": 692,
+        "checked_all": true,
+        "violations": []
+      },
+      "judge": {
+        "author": "budel-craft",
+        "below_target": {
+          "half": 0,
+          "quarter": 0,
+          "target": 0
+        },
+        "border_free_share": 33.2,
+        "case": "medium",
+        "coverage": 51.59,
+        "coverage_usable": 54.9,
+        "declared": {
+          "budget": null,
+          "machine": "linux x86_64 (1 search workers)",
+          "runtime_s": 12.853620601
+        },
+        "ink_area": 1485648.5,
+        "pairs_checked": 860,
+        "regime": "layered",
+        "runtime_s": 6.71,
+        "seated": 312,
+        "seated_by_class": [
+          {
+            "available": 112,
+            "seated": 112,
+            "size": 176.5
+          },
+          {
+            "available": 1,
+            "seated": 1,
+            "size": 150.0
+          },
+          {
+            "available": 42,
+            "seated": 42,
+            "size": 105.9
+          },
+          {
+            "available": 157,
+            "seated": 157,
+            "size": 63.5
+          }
+        ],
+        "shapes": 312,
+        "tightest": 3.0,
+        "valid": true,
+        "violations": []
+      },
+      "answer_sha256": "7a69cb1b8d597475a367772c03d9f0100b39efc03e90941613211dc6751bdd7e",
+      "validation_pending": false,
+      "eligible": true,
+      "strict_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 0.061843436999879486,
+        "cpu_s": 0.048888,
+        "leader_peak_rss_bytes": 77385728,
+        "sampled_group_peak_rss_bytes": 77385728,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      },
+      "judge_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 6.927695489000143,
+        "cpu_s": 6.265032,
+        "leader_peak_rss_bytes": 102891520,
+        "sampled_group_peak_rss_bytes": 102891520,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      }
+    },
+    {
+      "spec": {
+        "case": "medium",
+        "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+        "binary_sha256": "45697caa7908acd8289b6cdf3742794b87889daf0cc22104e312d44c7157ed04",
+        "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+        "algorithm": "lns",
+        "seed": 2,
+        "workers": 1,
+        "seconds": 14,
+        "memory_mib": 1024,
+        "judge_seconds": 240.0,
+        "eval_limit": null,
+        "solver_flags": [],
+        "policy_sha256": null,
+        "reference": true,
+        "engine": "native",
+        "pin_cpu": true,
+        "external_version": null,
+        "adapter_sha256": null
+      },
+      "execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 12.708733970999674,
+        "cpu_s": 11.613004,
+        "leader_peak_rss_bytes": 91516928,
+        "sampled_group_peak_rss_bytes": 91516928,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ]
+      },
+      "metrics": {
+        "case": "medium",
+        "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+        "config_sha256": "3c6d6fcb1f79d253681ee4024a11167cd16673eb696270135af5f1c34c814634",
+        "config": {
+          "algorithm": "lns",
+          "seed": 2,
+          "workers": 1,
+          "cache_bytes": 67108864,
+          "edge_tree": true,
+          "pair_hints": true,
+          "policy": {
+            "stock_area": 0.32,
+            "box_area": 0.58,
+            "extent": 0.1,
+            "rect_waste": 0.3,
+            "rect_height": 0.12,
+            "contact_rate": 0.28,
+            "gap_trials": 120,
+            "rebuild_size": 8,
+            "blocker_weight": 0.36,
+            "restarts": 5,
+            "slide_sweeps": 3,
+            "late_length": 0,
+            "separate_moves": 600,
+            "best_of": 1,
+            "pocket_trials": 16,
+            "rescue_after": 2
+          },
+          "features": {
+            "slide": true,
+            "pockets": true,
+            "late_acceptance": true,
+            "separate": true,
+            "share": true
+          }
+        },
+        "termination": "available-area-complete",
+        "requested_seconds": 14.0,
+        "runtime_s": 12.684694572,
+        "cumulative_s": 12.684694572,
+        "preprocess_s": 0.056637203,
+        "overshoot_s": 0.0,
+        "requested_proposals": null,
+        "proposals": 3920032,
+        "cumulative_proposals": 3920032,
+        "first_complete_s": 12.683003109,
+        "best": {
+          "strict_valid": true,
+          "complete": true,
+          "seated": 312,
+          "available": 312,
+          "area": 1485648.4536000001,
+          "coverage": 51.585015750000004,
+          "available_fraction": 1.0,
+          "certified_gap": 3.000001,
+          "pair_checks": 689,
+          "checked_all": true,
+          "violations": []
+        },
+        "certified_answer_written": true,
+        "candidate_validations": 116,
+        "superseded_candidates": 111,
+        "stats": {
+          "kernel": {
+            "candidates": 3920032,
+            "pairs": 5830626,
+            "nodes": 145576214,
+            "ray_nodes": 30918646,
+            "edges": 12569395,
+            "disc_rejections": 395847,
+            "orientations": 348478,
+            "cache_hits": 832476,
+            "cache_peak_bytes": 67108864
+          },
+          "attempts": 5,
+          "rectangle_insertions": 674,
+          "gap_insertions": 660,
+          "move_trials": 2965813,
+          "moves": 834,
+          "rebuild_trials": 3223,
+          "rebuilds": 221,
+          "repair_trials": 0,
+          "repairs": 0,
+          "fcmaes_evaluations": 0,
+          "slides": 1783,
+          "pocket_trials": 13932,
+          "pocket_insertions": 8,
+          "late_accepts": 0,
+          "separation_trials": 108,
+          "separations": 1,
+          "separation_moves": 2321,
+          "migrations": 0,
+          "persistent_rounds": 222,
+          "incumbent_resets": 0
+        }
+      },
+      "strict": {
+        "strict_valid": true,
+        "complete": true,
+        "seated": 312,
+        "available": 312,
+        "area": 1485648.4536000001,
+        "coverage": 51.585015750000004,
+        "available_fraction": 1.0,
+        "certified_gap": 3.000001,
+        "pair_checks": 689,
+        "checked_all": true,
+        "violations": []
+      },
+      "judge": {
+        "author": "budel-craft",
+        "below_target": {
+          "half": 0,
+          "quarter": 0,
+          "target": 0
+        },
+        "border_free_share": 33.2,
+        "case": "medium",
+        "coverage": 51.59,
+        "coverage_usable": 54.9,
+        "declared": {
+          "budget": null,
+          "machine": "linux x86_64 (1 search workers)",
+          "runtime_s": 12.68398332
+        },
+        "ink_area": 1485648.5,
+        "pairs_checked": 836,
+        "regime": "layered",
+        "runtime_s": 6.82,
+        "seated": 312,
+        "seated_by_class": [
+          {
+            "available": 112,
+            "seated": 112,
+            "size": 176.5
+          },
+          {
+            "available": 1,
+            "seated": 1,
+            "size": 150.0
+          },
+          {
+            "available": 42,
+            "seated": 42,
+            "size": 105.9
+          },
+          {
+            "available": 157,
+            "seated": 157,
+            "size": 63.5
+          }
+        ],
+        "shapes": 312,
+        "tightest": 3.0,
+        "valid": true,
+        "violations": []
+      },
+      "answer_sha256": "f22ed0dbc37b221c3b7b88f9c07f34aceb1410a26aa2dce1f43d7ebaf9283df7",
+      "validation_pending": false,
+      "eligible": true,
+      "strict_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 0.06251283900019189,
+        "cpu_s": 0.050953,
+        "leader_peak_rss_bytes": 77385728,
+        "sampled_group_peak_rss_bytes": 77385728,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      },
+      "judge_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 7.0239941159998125,
+        "cpu_s": 6.394339,
+        "leader_peak_rss_bytes": 102715392,
+        "sampled_group_peak_rss_bytes": 102715392,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      }
+    },
+    {
+      "spec": {
+        "case": "medium",
+        "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+        "binary_sha256": "45697caa7908acd8289b6cdf3742794b87889daf0cc22104e312d44c7157ed04",
+        "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+        "algorithm": "lns",
+        "seed": 3,
+        "workers": 1,
+        "seconds": 14,
+        "memory_mib": 1024,
+        "judge_seconds": 240.0,
+        "eval_limit": null,
+        "solver_flags": [],
+        "policy_sha256": null,
+        "reference": true,
+        "engine": "native",
+        "pin_cpu": true,
+        "external_version": null,
+        "adapter_sha256": null
+      },
+      "execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 13.656486177999795,
+        "cpu_s": 12.578562999999999,
+        "leader_peak_rss_bytes": 90816512,
+        "sampled_group_peak_rss_bytes": 90816512,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ]
+      },
+      "metrics": {
+        "case": "medium",
+        "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+        "config_sha256": "a049d1379f15a5e15efdafb78a50cd728e2ed6fe35b368edb58156573bc30102",
+        "config": {
+          "algorithm": "lns",
+          "seed": 3,
+          "workers": 1,
+          "cache_bytes": 67108864,
+          "edge_tree": true,
+          "pair_hints": true,
+          "policy": {
+            "stock_area": 0.32,
+            "box_area": 0.58,
+            "extent": 0.1,
+            "rect_waste": 0.3,
+            "rect_height": 0.12,
+            "contact_rate": 0.28,
+            "gap_trials": 120,
+            "rebuild_size": 8,
+            "blocker_weight": 0.36,
+            "restarts": 5,
+            "slide_sweeps": 3,
+            "late_length": 0,
+            "separate_moves": 600,
+            "best_of": 1,
+            "pocket_trials": 16,
+            "rescue_after": 2
+          },
+          "features": {
+            "slide": true,
+            "pockets": true,
+            "late_acceptance": true,
+            "separate": true,
+            "share": true
+          }
+        },
+        "termination": "time-limit",
+        "requested_seconds": 14.0,
+        "runtime_s": 13.632399075,
+        "cumulative_s": 13.632399075,
+        "preprocess_s": 0.073726845,
+        "overshoot_s": 0.0,
+        "requested_proposals": null,
+        "proposals": 3798524,
+        "cumulative_proposals": 3798524,
+        "first_complete_s": null,
+        "best": {
+          "strict_valid": true,
+          "complete": false,
+          "seated": 309,
+          "available": 312,
+          "area": 1478343.1250500001,
+          "coverage": 51.331358508680566,
+          "available_fraction": 0.9950827340530677,
+          "certified_gap": 3.000001,
+          "pair_checks": 666,
+          "checked_all": true,
+          "violations": []
+        },
+        "certified_answer_written": true,
+        "candidate_validations": 110,
+        "superseded_candidates": 95,
+        "stats": {
+          "kernel": {
+            "candidates": 3798524,
+            "pairs": 5682330,
+            "nodes": 139824772,
+            "ray_nodes": 31125035,
+            "edges": 12365790,
+            "disc_rejections": 430717,
+            "orientations": 362400,
+            "cache_hits": 894759,
+            "cache_peak_bytes": 67108864
+          },
+          "attempts": 5,
+          "rectangle_insertions": 672,
+          "gap_insertions": 664,
+          "move_trials": 2718534,
+          "moves": 791,
+          "rebuild_trials": 2935,
+          "rebuilds": 185,
+          "repair_trials": 0,
+          "repairs": 0,
+          "fcmaes_evaluations": 0,
+          "slides": 1639,
+          "pocket_trials": 22282,
+          "pocket_insertions": 7,
+          "late_accepts": 0,
+          "separation_trials": 78,
+          "separations": 2,
+          "separation_moves": 2409,
+          "migrations": 0,
+          "persistent_rounds": 190,
+          "incumbent_resets": 0
+        }
+      },
+      "strict": {
+        "strict_valid": true,
+        "complete": false,
+        "seated": 309,
+        "available": 312,
+        "area": 1478343.1250500001,
+        "coverage": 51.331358508680566,
+        "available_fraction": 0.9950827340530677,
+        "certified_gap": 3.000001,
+        "pair_checks": 666,
+        "checked_all": true,
+        "violations": []
+      },
+      "judge": {
+        "author": "budel-craft",
+        "below_target": {
+          "half": 0,
+          "quarter": 0,
+          "target": 0
+        },
+        "border_free_share": 33.5,
+        "case": "medium",
+        "coverage": 51.33,
+        "coverage_usable": 54.63,
+        "declared": {
+          "budget": null,
+          "machine": "linux x86_64 (1 search workers)",
+          "runtime_s": 13.631129833
+        },
+        "ink_area": 1478343.1,
+        "pairs_checked": 836,
+        "regime": "layered",
+        "runtime_s": 6.99,
+        "seated": 309,
+        "seated_by_class": [
+          {
+            "available": 112,
+            "seated": 112,
+            "size": 176.5
+          },
+          {
+            "available": 1,
+            "seated": 1,
+            "size": 150.0
+          },
+          {
+            "available": 42,
+            "seated": 40,
+            "size": 105.9
+          },
+          {
+            "available": 157,
+            "seated": 156,
+            "size": 63.5
+          }
+        ],
+        "shapes": 312,
+        "tightest": 3.0,
+        "valid": true,
+        "violations": []
+      },
+      "answer_sha256": "447751a97c55d39f40a65835a468a3e1b89b98e9d9c16cda203fd5553ec61606",
+      "validation_pending": false,
+      "eligible": true,
+      "strict_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 0.09939953000002788,
+        "cpu_s": 0.062933,
+        "leader_peak_rss_bytes": 77389824,
+        "sampled_group_peak_rss_bytes": 77389824,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      },
+      "judge_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 7.223795875999713,
+        "cpu_s": 6.491353,
+        "leader_peak_rss_bytes": 102846464,
+        "sampled_group_peak_rss_bytes": 102846464,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      }
+    },
+    {
+      "spec": {
+        "case": "layered-hard",
+        "case_sha256": "f60887e32e825d46e2b74bac12ed6fded060bf20a8fdf9d2e3ee9797e83d0688",
+        "binary_sha256": "45697caa7908acd8289b6cdf3742794b87889daf0cc22104e312d44c7157ed04",
+        "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+        "algorithm": "lns",
+        "seed": 1,
+        "workers": 1,
+        "seconds": 65,
+        "memory_mib": 1024,
+        "judge_seconds": 240.0,
+        "eval_limit": null,
+        "solver_flags": [],
+        "policy_sha256": null,
+        "reference": true,
+        "engine": "native",
+        "pin_cpu": true,
+        "external_version": null,
+        "adapter_sha256": null
+      },
+      "execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 64.25377889900028,
+        "cpu_s": 58.837151999999996,
+        "leader_peak_rss_bytes": 123695104,
+        "sampled_group_peak_rss_bytes": 123695104,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ]
+      },
+      "metrics": {
+        "case": "layered-hard",
+        "case_sha256": "f60887e32e825d46e2b74bac12ed6fded060bf20a8fdf9d2e3ee9797e83d0688",
+        "config_sha256": "b0b8b3eec4a73e9d1c7079b445fe6e4a25521a4d5341263730acf17bea52c9fa",
+        "config": {
+          "algorithm": "lns",
+          "seed": 1,
+          "workers": 1,
+          "cache_bytes": 67108864,
+          "edge_tree": true,
+          "pair_hints": true,
+          "policy": {
+            "stock_area": 0.32,
+            "box_area": 0.58,
+            "extent": 0.1,
+            "rect_waste": 0.3,
+            "rect_height": 0.12,
+            "contact_rate": 0.28,
+            "gap_trials": 120,
+            "rebuild_size": 8,
+            "blocker_weight": 0.36,
+            "restarts": 5,
+            "slide_sweeps": 3,
+            "late_length": 0,
+            "separate_moves": 600,
+            "best_of": 1,
+            "pocket_trials": 16,
+            "rescue_after": 2
+          },
+          "features": {
+            "slide": true,
+            "pockets": true,
+            "late_acceptance": true,
+            "separate": true,
+            "share": true
+          }
+        },
+        "termination": "time-limit",
+        "requested_seconds": 65.0,
+        "runtime_s": 64.232809727,
+        "cumulative_s": 64.232809727,
+        "preprocess_s": 0.21492695,
+        "overshoot_s": 0.0,
+        "requested_proposals": null,
+        "proposals": 12323219,
+        "cumulative_proposals": 12323219,
+        "first_complete_s": null,
+        "best": {
+          "strict_valid": true,
+          "complete": false,
+          "seated": 1154,
+          "available": 1184,
+          "area": 1439496.2037500022,
+          "coverage": 49.98250707465285,
+          "available_fraction": 0.961485392585149,
+          "certified_gap": 3.000001,
+          "pair_checks": 2523,
+          "checked_all": true,
+          "violations": []
+        },
+        "certified_answer_written": true,
+        "candidate_validations": 177,
+        "superseded_candidates": 167,
+        "stats": {
+          "kernel": {
+            "candidates": 12323219,
+            "pairs": 19802539,
+            "nodes": 508779057,
+            "ray_nodes": 119508658,
+            "edges": 61976232,
+            "disc_rejections": 1421874,
+            "orientations": 1436332,
+            "cache_hits": 2203437,
+            "cache_peak_bytes": 67108864
+          },
+          "attempts": 5,
+          "rectangle_insertions": 1795,
+          "gap_insertions": 3701,
+          "move_trials": 8817612,
+          "moves": 1819,
+          "rebuild_trials": 7378,
+          "rebuilds": 219,
+          "repair_trials": 0,
+          "repairs": 0,
+          "fcmaes_evaluations": 0,
+          "slides": 7572,
+          "pocket_trials": 32464,
+          "pocket_insertions": 10,
+          "late_accepts": 0,
+          "separation_trials": 36,
+          "separations": 0,
+          "separation_moves": 2405,
+          "migrations": 0,
+          "persistent_rounds": 170,
+          "incumbent_resets": 0
+        }
+      },
+      "strict": {
+        "strict_valid": true,
+        "complete": false,
+        "seated": 1154,
+        "available": 1184,
+        "area": 1439496.2037500022,
+        "coverage": 49.98250707465285,
+        "available_fraction": 0.961485392585149,
+        "certified_gap": 3.000001,
+        "pair_checks": 2523,
+        "checked_all": true,
+        "violations": []
+      },
+      "judge": {
+        "author": "budel-craft",
+        "below_target": {
+          "half": 0,
+          "quarter": 0,
+          "target": 0
+        },
+        "border_free_share": 34.0,
+        "case": "layered-hard",
+        "coverage": 49.98,
+        "coverage_usable": 53.2,
+        "declared": {
+          "budget": null,
+          "machine": "linux x86_64 (1 search workers)",
+          "runtime_s": 64.230596075
+        },
+        "ink_area": 1439496.2,
+        "pairs_checked": 3461,
+        "regime": "layered",
+        "runtime_s": 27.28,
+        "seated": 1154,
+        "seated_by_class": [
+          {
+            "available": 238,
+            "seated": 227,
+            "size": 124.8
+          },
+          {
+            "available": 2,
+            "seated": 1,
+            "size": 106.1
+          },
+          {
+            "available": 1,
+            "seated": 1,
+            "size": 76.6
+          },
+          {
+            "available": 87,
+            "seated": 71,
+            "size": 74.9
+          },
+          {
+            "available": 149,
+            "seated": 147,
+            "size": 44.9
+          },
+          {
+            "available": 281,
+            "seated": 281,
+            "size": 27.0
+          },
+          {
+            "available": 426,
+            "seated": 426,
+            "size": 16.2
+          }
+        ],
+        "shapes": 1184,
+        "tightest": 3.0,
+        "valid": true,
+        "violations": []
+      },
+      "answer_sha256": "8abec3e4a1536fc7d2dce3229b99291839a1f8f06c431641d5f9f93f9002fb67",
+      "validation_pending": false,
+      "eligible": true,
+      "strict_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 0.23354310800004896,
+        "cpu_s": 0.211566,
+        "leader_peak_rss_bytes": 77389824,
+        "sampled_group_peak_rss_bytes": 77389824,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      },
+      "judge_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 27.607539284000268,
+        "cpu_s": 25.335905,
+        "leader_peak_rss_bytes": 142319616,
+        "sampled_group_peak_rss_bytes": 142319616,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      }
+    },
+    {
+      "spec": {
+        "case": "layered-hard",
+        "case_sha256": "f60887e32e825d46e2b74bac12ed6fded060bf20a8fdf9d2e3ee9797e83d0688",
+        "binary_sha256": "45697caa7908acd8289b6cdf3742794b87889daf0cc22104e312d44c7157ed04",
+        "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+        "algorithm": "lns",
+        "seed": 2,
+        "workers": 1,
+        "seconds": 65,
+        "memory_mib": 1024,
+        "judge_seconds": 240.0,
+        "eval_limit": null,
+        "solver_flags": [],
+        "policy_sha256": null,
+        "reference": true,
+        "engine": "native",
+        "pin_cpu": true,
+        "external_version": null,
+        "adapter_sha256": null
+      },
+      "execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 64.26499979099981,
+        "cpu_s": 62.281917,
+        "leader_peak_rss_bytes": 122728448,
+        "sampled_group_peak_rss_bytes": 122728448,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ]
+      },
+      "metrics": {
+        "case": "layered-hard",
+        "case_sha256": "f60887e32e825d46e2b74bac12ed6fded060bf20a8fdf9d2e3ee9797e83d0688",
+        "config_sha256": "3c6d6fcb1f79d253681ee4024a11167cd16673eb696270135af5f1c34c814634",
+        "config": {
+          "algorithm": "lns",
+          "seed": 2,
+          "workers": 1,
+          "cache_bytes": 67108864,
+          "edge_tree": true,
+          "pair_hints": true,
+          "policy": {
+            "stock_area": 0.32,
+            "box_area": 0.58,
+            "extent": 0.1,
+            "rect_waste": 0.3,
+            "rect_height": 0.12,
+            "contact_rate": 0.28,
+            "gap_trials": 120,
+            "rebuild_size": 8,
+            "blocker_weight": 0.36,
+            "restarts": 5,
+            "slide_sweeps": 3,
+            "late_length": 0,
+            "separate_moves": 600,
+            "best_of": 1,
+            "pocket_trials": 16,
+            "rescue_after": 2
+          },
+          "features": {
+            "slide": true,
+            "pockets": true,
+            "late_acceptance": true,
+            "separate": true,
+            "share": true
+          }
+        },
+        "termination": "time-limit",
+        "requested_seconds": 65.0,
+        "runtime_s": 64.234820021,
+        "cumulative_s": 64.234820021,
+        "preprocess_s": 0.215984749,
+        "overshoot_s": 0.0,
+        "requested_proposals": null,
+        "proposals": 13589006,
+        "cumulative_proposals": 13589006,
+        "first_complete_s": null,
+        "best": {
+          "strict_valid": true,
+          "complete": false,
+          "seated": 1159,
+          "available": 1184,
+          "area": 1459888.8334000027,
+          "coverage": 50.69058449305565,
+          "available_fraction": 0.9751062798607082,
+          "certified_gap": 3.000001,
+          "pair_checks": 2607,
+          "checked_all": true,
+          "violations": []
+        },
+        "certified_answer_written": true,
+        "candidate_validations": 203,
+        "superseded_candidates": 228,
+        "stats": {
+          "kernel": {
+            "candidates": 13589006,
+            "pairs": 21422181,
+            "nodes": 547641777,
+            "ray_nodes": 129638999,
+            "edges": 67793449,
+            "disc_rejections": 1570710,
+            "orientations": 1607499,
+            "cache_hits": 2459200,
+            "cache_peak_bytes": 67108864
+          },
+          "attempts": 5,
+          "rectangle_insertions": 1690,
+          "gap_insertions": 3845,
+          "move_trials": 9677886,
+          "moves": 1998,
+          "rebuild_trials": 8228,
+          "rebuilds": 262,
+          "repair_trials": 0,
+          "repairs": 0,
+          "fcmaes_evaluations": 0,
+          "slides": 6168,
+          "pocket_trials": 31766,
+          "pocket_insertions": 11,
+          "late_accepts": 0,
+          "separation_trials": 49,
+          "separations": 0,
+          "separation_moves": 2923,
+          "migrations": 0,
+          "persistent_rounds": 199,
+          "incumbent_resets": 0
+        }
+      },
+      "strict": {
+        "strict_valid": true,
+        "complete": false,
+        "seated": 1159,
+        "available": 1184,
+        "area": 1459888.8334000027,
+        "coverage": 50.69058449305565,
+        "available_fraction": 0.9751062798607082,
+        "certified_gap": 3.000001,
+        "pair_checks": 2607,
+        "checked_all": true,
+        "violations": []
+      },
+      "judge": {
+        "author": "budel-craft",
+        "below_target": {
+          "half": 0,
+          "quarter": 0,
+          "target": 0
+        },
+        "border_free_share": 33.6,
+        "case": "layered-hard",
+        "coverage": 50.69,
+        "coverage_usable": 53.95,
+        "declared": {
+          "budget": null,
+          "machine": "linux x86_64 (1 search workers)",
+          "runtime_s": 64.232137062
+        },
+        "ink_area": 1459888.8,
+        "pairs_checked": 3592,
+        "regime": "layered",
+        "runtime_s": 26.76,
+        "seated": 1159,
+        "seated_by_class": [
+          {
+            "available": 238,
+            "seated": 235,
+            "size": 124.8
+          },
+          {
+            "available": 2,
+            "seated": 1,
+            "size": 106.1
+          },
+          {
+            "available": 1,
+            "seated": 0,
+            "size": 76.6
+          },
+          {
+            "available": 87,
+            "seated": 68,
+            "size": 74.9
+          },
+          {
+            "available": 149,
+            "seated": 148,
+            "size": 44.9
+          },
+          {
+            "available": 281,
+            "seated": 281,
+            "size": 27.0
+          },
+          {
+            "available": 426,
+            "seated": 426,
+            "size": 16.2
+          }
+        ],
+        "shapes": 1184,
+        "tightest": 3.0,
+        "valid": true,
+        "violations": []
+      },
+      "answer_sha256": "fa0d984ad0c75c8e9cb3bf7ae157654a1fbbca6f38203aa2ef59aa9bce9aeb1c",
+      "validation_pending": false,
+      "eligible": true,
+      "strict_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 0.2494039379998867,
+        "cpu_s": 0.234669,
+        "leader_peak_rss_bytes": 77328384,
+        "sampled_group_peak_rss_bytes": 77328384,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      },
+      "judge_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 27.046404346000145,
+        "cpu_s": 26.797282,
+        "leader_peak_rss_bytes": 131035136,
+        "sampled_group_peak_rss_bytes": 131035136,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      }
+    },
+    {
+      "spec": {
+        "case": "layered-hard",
+        "case_sha256": "f60887e32e825d46e2b74bac12ed6fded060bf20a8fdf9d2e3ee9797e83d0688",
+        "binary_sha256": "45697caa7908acd8289b6cdf3742794b87889daf0cc22104e312d44c7157ed04",
+        "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+        "algorithm": "lns",
+        "seed": 3,
+        "workers": 1,
+        "seconds": 65,
+        "memory_mib": 1024,
+        "judge_seconds": 240.0,
+        "eval_limit": null,
+        "solver_flags": [],
+        "policy_sha256": null,
+        "reference": true,
+        "engine": "native",
+        "pin_cpu": true,
+        "external_version": null,
+        "adapter_sha256": null
+      },
+      "execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 64.27160021600002,
+        "cpu_s": 63.616042,
+        "leader_peak_rss_bytes": 122466304,
+        "sampled_group_peak_rss_bytes": 122466304,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ]
+      },
+      "metrics": {
+        "case": "layered-hard",
+        "case_sha256": "f60887e32e825d46e2b74bac12ed6fded060bf20a8fdf9d2e3ee9797e83d0688",
+        "config_sha256": "a049d1379f15a5e15efdafb78a50cd728e2ed6fe35b368edb58156573bc30102",
+        "config": {
+          "algorithm": "lns",
+          "seed": 3,
+          "workers": 1,
+          "cache_bytes": 67108864,
+          "edge_tree": true,
+          "pair_hints": true,
+          "policy": {
+            "stock_area": 0.32,
+            "box_area": 0.58,
+            "extent": 0.1,
+            "rect_waste": 0.3,
+            "rect_height": 0.12,
+            "contact_rate": 0.28,
+            "gap_trials": 120,
+            "rebuild_size": 8,
+            "blocker_weight": 0.36,
+            "restarts": 5,
+            "slide_sweeps": 3,
+            "late_length": 0,
+            "separate_moves": 600,
+            "best_of": 1,
+            "pocket_trials": 16,
+            "rescue_after": 2
+          },
+          "features": {
+            "slide": true,
+            "pockets": true,
+            "late_acceptance": true,
+            "separate": true,
+            "share": true
+          }
+        },
+        "termination": "time-limit",
+        "requested_seconds": 65.0,
+        "runtime_s": 64.23537515,
+        "cumulative_s": 64.23537515,
+        "preprocess_s": 0.204686737,
+        "overshoot_s": 0.0,
+        "requested_proposals": null,
+        "proposals": 11463523,
+        "cumulative_proposals": 11463523,
+        "first_complete_s": null,
+        "best": {
+          "strict_valid": true,
+          "complete": false,
+          "seated": 1155,
+          "available": 1184,
+          "area": 1448344.0279500023,
+          "coverage": 50.289723192708415,
+          "available_fraction": 0.9673951363568241,
+          "certified_gap": 3.000001,
+          "pair_checks": 2537,
+          "checked_all": true,
+          "violations": []
+        },
+        "certified_answer_written": true,
+        "candidate_validations": 194,
+        "superseded_candidates": 210,
+        "stats": {
+          "kernel": {
+            "candidates": 11463523,
+            "pairs": 18172677,
+            "nodes": 465384785,
+            "ray_nodes": 114757237,
+            "edges": 55933893,
+            "disc_rejections": 1310673,
+            "orientations": 1478208,
+            "cache_hits": 2075411,
+            "cache_peak_bytes": 67108864
+          },
+          "attempts": 5,
+          "rectangle_insertions": 1739,
+          "gap_insertions": 3790,
+          "move_trials": 8054386,
+          "moves": 1952,
+          "rebuild_trials": 7214,
+          "rebuilds": 254,
+          "repair_trials": 0,
+          "repairs": 0,
+          "fcmaes_evaluations": 0,
+          "slides": 7062,
+          "pocket_trials": 28706,
+          "pocket_insertions": 5,
+          "late_accepts": 0,
+          "separation_trials": 27,
+          "separations": 0,
+          "separation_moves": 1489,
+          "migrations": 0,
+          "persistent_rounds": 157,
+          "incumbent_resets": 0
+        }
+      },
+      "strict": {
+        "strict_valid": true,
+        "complete": false,
+        "seated": 1155,
+        "available": 1184,
+        "area": 1448344.0279500023,
+        "coverage": 50.289723192708415,
+        "available_fraction": 0.9673951363568241,
+        "certified_gap": 3.000001,
+        "pair_checks": 2537,
+        "checked_all": true,
+        "violations": []
+      },
+      "judge": {
+        "author": "budel-craft",
+        "below_target": {
+          "half": 0,
+          "quarter": 0,
+          "target": 0
+        },
+        "border_free_share": 33.9,
+        "case": "layered-hard",
+        "coverage": 50.29,
+        "coverage_usable": 53.53,
+        "declared": {
+          "budget": null,
+          "machine": "linux x86_64 (1 search workers)",
+          "runtime_s": 64.233087091
+        },
+        "ink_area": 1448344.0,
+        "pairs_checked": 3480,
+        "regime": "layered",
+        "runtime_s": 28.52,
+        "seated": 1155,
+        "seated_by_class": [
+          {
+            "available": 238,
+            "seated": 231,
+            "size": 124.8
+          },
+          {
+            "available": 2,
+            "seated": 1,
+            "size": 106.1
+          },
+          {
+            "available": 1,
+            "seated": 1,
+            "size": 76.6
+          },
+          {
+            "available": 87,
+            "seated": 68,
+            "size": 74.9
+          },
+          {
+            "available": 149,
+            "seated": 148,
+            "size": 44.9
+          },
+          {
+            "available": 281,
+            "seated": 280,
+            "size": 27.0
+          },
+          {
+            "available": 426,
+            "seated": 426,
+            "size": 16.2
+          }
+        ],
+        "shapes": 1184,
+        "tightest": 3.0,
+        "valid": true,
+        "violations": []
+      },
+      "answer_sha256": "99017d2c72573147f94f916c3dfbe148539de8c10365fbc4afd7721be9a9fbd5",
+      "validation_pending": false,
+      "eligible": true,
+      "strict_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 0.25680902700014485,
+        "cpu_s": 0.224987,
+        "leader_peak_rss_bytes": 77336576,
+        "sampled_group_peak_rss_bytes": 77336576,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      },
+      "judge_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 28.825248074999763,
+        "cpu_s": 28.457918,
+        "leader_peak_rss_bytes": 142348288,
+        "sampled_group_peak_rss_bytes": 142348288,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      }
+    }
+  ]
+}

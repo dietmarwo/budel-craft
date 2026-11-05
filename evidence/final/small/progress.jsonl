@@ -1,0 +1,8 @@
+{"area":464129.1281999999,"discovered_s":0.026298356,"elapsed_s":0.026392809,"proposals":33,"seated":33,"stage":"rectangles"}
+{"area":474266.37954999995,"discovered_s":0.04202283,"elapsed_s":0.042106051,"proposals":777,"seated":34,"stage":"gap-fill"}
+{"area":494853.60095000005,"discovered_s":0.045134133,"elapsed_s":0.052003284,"proposals":1866,"seated":36,"stage":"gap-fill"}
+{"area":507173.21420000005,"discovered_s":0.056156413,"elapsed_s":0.076914976,"proposals":2693,"seated":37,"stage":"neighborhood"}
+{"area":508791.05375,"discovered_s":0.056913497,"elapsed_s":0.099341719,"proposals":2760,"seated":37,"stage":"neighborhood"}
+{"area":516511.45875000005,"discovered_s":0.071185373,"elapsed_s":0.117487245,"proposals":3050,"seated":38,"stage":"neighborhood"}
+{"area":525945.0046,"discovered_s":0.230813539,"elapsed_s":0.23497935,"proposals":9089,"seated":39,"stage":"gap-fill"}
+{"area":533665.4096,"discovered_s":0.232480317,"elapsed_s":0.239510449,"proposals":9089,"seated":40,"stage":"gap-fill"}

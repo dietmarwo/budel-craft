@@ -1,0 +1,227 @@
+{
+  "spec": {
+    "case": "medium",
+    "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+    "binary_sha256": "4960464367b82ad93842c67c56ffec8dc26d9a0007529657b81be5b49ce1ba7b",
+    "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+    "algorithm": "lns",
+    "seed": 1,
+    "workers": 1,
+    "seconds": 14,
+    "memory_mib": 1024,
+    "judge_seconds": 240.0,
+    "eval_limit": null,
+    "solver_flags": [],
+    "policy_sha256": null,
+    "reference": true,
+    "engine": "native",
+    "pin_cpu": true,
+    "external_version": null,
+    "adapter_sha256": null
+  },
+  "execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 13.639517099999921,
+    "cpu_s": 12.54542,
+    "leader_peak_rss_bytes": 90677248,
+    "sampled_group_peak_rss_bytes": 90677248,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      0
+    ]
+  },
+  "metrics": {
+    "case": "medium",
+    "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+    "config_sha256": "b0b8b3eec4a73e9d1c7079b445fe6e4a25521a4d5341263730acf17bea52c9fa",
+    "config": {
+      "algorithm": "lns",
+      "seed": 1,
+      "workers": 1,
+      "cache_bytes": 67108864,
+      "edge_tree": true,
+      "pair_hints": true,
+      "policy": {
+        "stock_area": 0.32,
+        "box_area": 0.58,
+        "extent": 0.1,
+        "rect_waste": 0.3,
+        "rect_height": 0.12,
+        "contact_rate": 0.28,
+        "gap_trials": 120,
+        "rebuild_size": 8,
+        "blocker_weight": 0.36,
+        "restarts": 5,
+        "slide_sweeps": 3,
+        "late_length": 0,
+        "separate_moves": 600,
+        "best_of": 1,
+        "pocket_trials": 16,
+        "rescue_after": 2
+      },
+      "features": {
+        "slide": true,
+        "pockets": true,
+        "late_acceptance": true,
+        "separate": true,
+        "share": true
+      }
+    },
+    "termination": "time-limit",
+    "requested_seconds": 14.0,
+    "runtime_s": 13.620840076,
+    "cumulative_s": 13.620840076,
+    "preprocess_s": 0.060228847,
+    "overshoot_s": 0.0,
+    "requested_proposals": null,
+    "proposals": 4114382,
+    "cumulative_proposals": 4114382,
+    "first_complete_s": null,
+    "best": {
+      "strict_valid": true,
+      "complete": false,
+      "seated": 311,
+      "available": 312,
+      "area": 1485117.0694000002,
+      "coverage": 51.56656490972223,
+      "available_fraction": 0.9996423217089397,
+      "certified_gap": 3.000001,
+      "pair_checks": 689,
+      "checked_all": true,
+      "violations": []
+    },
+    "certified_answer_written": true,
+    "candidate_validations": 119,
+    "superseded_candidates": 86,
+    "stats": {
+      "kernel": {
+        "candidates": 4114382,
+        "pairs": 6192173,
+        "nodes": 152176475,
+        "ray_nodes": 34004135,
+        "edges": 14458921,
+        "disc_rejections": 475288,
+        "orientations": 372870,
+        "cache_hits": 925576,
+        "cache_peak_bytes": 67108864
+      },
+      "attempts": 5,
+      "rectangle_insertions": 662,
+      "gap_insertions": 671,
+      "move_trials": 3037309,
+      "moves": 826,
+      "rebuild_trials": 3183,
+      "rebuilds": 200,
+      "repair_trials": 0,
+      "repairs": 0,
+      "fcmaes_evaluations": 0,
+      "slides": 1519,
+      "pocket_trials": 17739,
+      "pocket_insertions": 5,
+      "late_accepts": 0,
+      "separation_trials": 69,
+      "separations": 3,
+      "separation_moves": 2054,
+      "migrations": 0,
+      "persistent_rounds": 215,
+      "incumbent_resets": 0
+    }
+  },
+  "strict": {
+    "strict_valid": true,
+    "complete": false,
+    "seated": 311,
+    "available": 312,
+    "area": 1485117.0694000002,
+    "coverage": 51.56656490972223,
+    "available_fraction": 0.9996423217089397,
+    "certified_gap": 3.000001,
+    "pair_checks": 689,
+    "checked_all": true,
+    "violations": []
+  },
+  "judge": {
+    "author": "budel-craft",
+    "below_target": {
+      "half": 0,
+      "quarter": 0,
+      "target": 0
+    },
+    "border_free_share": 33.2,
+    "case": "medium",
+    "coverage": 51.57,
+    "coverage_usable": 54.88,
+    "declared": {
+      "budget": null,
+      "machine": "linux x86_64 (1 search workers)",
+      "runtime_s": 13.619756918
+    },
+    "ink_area": 1485117.1,
+    "pairs_checked": 856,
+    "regime": "layered",
+    "runtime_s": 7.08,
+    "seated": 311,
+    "seated_by_class": [
+      {
+        "available": 112,
+        "seated": 112,
+        "size": 176.5
+      },
+      {
+        "available": 1,
+        "seated": 1,
+        "size": 150.0
+      },
+      {
+        "available": 42,
+        "seated": 42,
+        "size": 105.9
+      },
+      {
+        "available": 157,
+        "seated": 156,
+        "size": 63.5
+      }
+    ],
+    "shapes": 312,
+    "tightest": 3.0,
+    "valid": true,
+    "violations": []
+  },
+  "answer_sha256": "66d3ebe0dffb1054d94171843977f7e6feeabe7df4458c941f82f7d595b75713",
+  "validation_pending": false,
+  "eligible": true,
+  "strict_execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 0.0633669080002619,
+    "cpu_s": 0.049545,
+    "leader_peak_rss_bytes": 77410304,
+    "sampled_group_peak_rss_bytes": 77410304,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      0
+    ],
+    "terminal": true
+  },
+  "judge_execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 7.272769568000058,
+    "cpu_s": 6.567615,
+    "leader_peak_rss_bytes": 103018496,
+    "sampled_group_peak_rss_bytes": 103018496,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      0
+    ],
+    "terminal": true
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "case": "tiny",
+  "case_sha256": "f0181bafa8f64a8fc78d37578a69c48d4e54855b87715c149830435a33b0135c",
+  "config_sha256": "7ad7978740a1e4a475ea75757c6cf40ff70bce1ad7d9ae830be52ecad0a34165",
+  "config": {
+    "algorithm": "lns",
+    "seed": 1,
+    "workers": 1,
+    "cache_bytes": 67108864,
+    "edge_tree": true,
+    "pair_hints": true,
+    "policy": {
+      "stock_area": 0.32,
+      "box_area": 0.58,
+      "extent": 0.1,
+      "rect_waste": 0.3,
+      "rect_height": 0.12,
+      "contact_rate": 0.28,
+      "gap_trials": 120,
+      "rebuild_size": 8
+    }
+  },
+  "termination": "available-area-complete",
+  "requested_seconds": 1.0,
+  "runtime_s": 0.031283825,
+  "cumulative_s": 0.031283825,
+  "preprocess_s": 0.000296399,
+  "overshoot_s": 0.0,
+  "requested_proposals": null,
+  "proposals": 2,
+  "cumulative_proposals": 2,
+  "first_complete_s": 0.009024681,
+  "best": {
+    "strict_valid": true,
+    "complete": true,
+    "seated": 2,
+    "available": 2,
+    "area": 500.0,
+    "coverage": 5.0,
+    "available_fraction": 1.0,
+    "certified_gap": 2.000001,
+    "pair_checks": 0,
+    "checked_all": true,
+    "violations": []
+  },
+  "certified_answer_written": true,
+  "stats": {
+    "kernel": {
+      "candidates": 2,
+      "pairs": 0,
+      "nodes": 0,
+      "ray_nodes": 0,
+      "edges": 0,
+      "disc_rejections": 0,
+      "orientations": 2,
+      "cache_hits": 0,
+      "cache_peak_bytes": 1024
+    },
+    "attempts": 1,
+    "rectangle_insertions": 2,
+    "gap_insertions": 0,
+    "move_trials": 0,
+    "moves": 0,
+    "rebuild_trials": 0,
+    "rebuilds": 0,
+    "repair_trials": 0,
+    "repairs": 0,
+    "fcmaes_evaluations": 0
+  }
+}

@@ -1,0 +1,15 @@
+{"area":1224966.1778500003,"discovered_s":0.07662605,"elapsed_s":0.097589776,"proposals":3384,"seated":128,"stage":"rectangle-checkpoint"}
+{"area":1264801.9466500008,"discovered_s":0.124500919,"elapsed_s":0.145429883,"proposals":9919,"seated":160,"stage":"gap-checkpoint"}
+{"area":1286980.934900001,"discovered_s":0.156852609,"elapsed_s":0.173211939,"proposals":13860,"seated":192,"stage":"gap-checkpoint"}
+{"area":1304776.3226000005,"discovered_s":0.185055303,"elapsed_s":0.224440421,"proposals":22241,"seated":227,"stage":"gap-fill"}
+{"area":1313496.8959000006,"discovered_s":0.246183112,"elapsed_s":0.278176235,"proposals":30625,"seated":241,"stage":"gap-fill"}
+{"area":1323399.6062500004,"discovered_s":0.298797757,"elapsed_s":0.326835394,"proposals":37487,"seated":244,"stage":"neighborhood"}
+{"area":1324891.1495000008,"discovered_s":0.303925836,"elapsed_s":0.375349996,"proposals":45536,"seated":246,"stage":"neighborhood"}
+{"area":1336324.0274999999,"discovered_s":0.787251064,"elapsed_s":0.817297071,"proposals":122003,"seated":226,"stage":"gap-fill"}
+{"area":1340396.5750999996,"discovered_s":0.844893935,"elapsed_s":0.881944797,"proposals":130785,"seated":234,"stage":"gap-fill"}
+{"area":1354504.1056499993,"discovered_s":0.902412086,"elapsed_s":0.930384899,"proposals":137766,"seated":233,"stage":"neighborhood"}
+{"area":1360905.4675499995,"discovered_s":0.935900622,"elapsed_s":0.973290374,"proposals":144437,"seated":236,"stage":"neighborhood"}
+{"area":1362719.7466,"discovered_s":2.20985305,"elapsed_s":2.235614032,"proposals":403935,"seated":235,"stage":"neighborhood"}
+{"area":1368811.2081500005,"discovered_s":2.2520229609999998,"elapsed_s":2.276307644,"proposals":409427,"seated":238,"stage":"neighborhood"}
+{"area":1368811.2081500005,"discovered_s":5.080157937,"elapsed_s":5.080159275,"proposals":942162,"seated":238,"stage":"heartbeat"}
+{"area":1368811.2081500005,"discovered_s":10.087449707,"elapsed_s":10.087451565,"proposals":1883060,"seated":238,"stage":"heartbeat"}

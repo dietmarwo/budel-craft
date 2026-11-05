@@ -1,0 +1,38 @@
+{
+  "collection_attempted": true,
+  "elapsed_seconds": 0.028658608,
+  "output_errors": [],
+  "outputs": {
+    "answer": {
+      "bytes": 411,
+      "path": ".command-outputs/answer",
+      "sha256": "52ad4ecda3e8f04a675d5fb39501e15a4525298f82738655f78408e6fae11d22"
+    },
+    "checkpoint": {
+      "bytes": 1187,
+      "path": ".command-outputs/checkpoint",
+      "sha256": "4d3935ef58c0e794a257e185847eaaa2f91e3c9a991fc1c4c74b311c741fe815"
+    },
+    "metrics": {
+      "bytes": 1644,
+      "path": ".command-outputs/metrics",
+      "sha256": "4cf0e78742093c41dbbeffdcb50b7b9b4f6ede6549328fdc340c721e887578e7"
+    },
+    "progress": {
+      "bytes": 112,
+      "path": ".command-outputs/progress",
+      "sha256": "4832dac3d6d90282626a6fdf53cb30c144cf384f4380b7febe181feb76cba5eb"
+    },
+    "strict": {
+      "bytes": 237,
+      "path": ".command-outputs/strict",
+      "sha256": "08b56eae453f430e71582eae3f20c0eba9dc2eee71971083cab8ca71592d99e6"
+    }
+  },
+  "process": {
+    "code": 0,
+    "signal": null
+  },
+  "schema_version": "execution.command.result/0.1",
+  "state": "completed"
+}

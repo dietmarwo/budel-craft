@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "file": "large.json",
+      "sha256": "99d8d8135395435e91510dbce52b9d7679879dc06a6bc19e21bf4bfee67d7123",
+      "bytes": 4281064,
+      "items": 2127
+    },
+    {
+      "file": "layered-hard.json",
+      "sha256": "f60887e32e825d46e2b74bac12ed6fded060bf20a8fdf9d2e3ee9797e83d0688",
+      "bytes": 3363866,
+      "items": 1184
+    },
+    {
+      "file": "medium.json",
+      "sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+      "bytes": 917857,
+      "items": 312
+    },
+    {
+      "file": "small.json",
+      "sha256": "44ffd9746de20b92288665b528029d7834f0d72c366ac1ed356120c9f9f611e0",
+      "bytes": 148430,
+      "items": 40
+    },
+    {
+      "file": "tiny.json",
+      "sha256": "f0181bafa8f64a8fc78d37578a69c48d4e54855b87715c149830435a33b0135c",
+      "bytes": 932,
+      "items": 2
+    },
+    {
+      "file": "uniform-hard.json",
+      "sha256": "2a823069a98be1f7c2fb4461853956b4857eb8cbbce3f929a124fcaa5223862a",
+      "bytes": 2941630,
+      "items": 1008
+    }
+  ]
+}

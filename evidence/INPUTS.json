@@ -1,0 +1,9 @@
+{
+  "judge_transcription_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+  "plan_sha256": "3d0e4c336e24be676507fca79dc633710fc0a184e63b6143c6508cf171de6561",
+  "optimization_jobs_revision": "eb232ae58d388b998d9da1eefc33643c939f4b38",
+  "packingsolver_version": "0.1.1296",
+  "rust": "1.88.0",
+  "cpu": "Intel Xeon Platinum 8573C",
+  "native_optional_optimizer": "fcmaes-core 0.1.3"
+}

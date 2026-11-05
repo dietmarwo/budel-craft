@@ -3,8 +3,10 @@ name = "budel-craft"
 version = "0.2.0"
 edition = "2024"
 rust-version = "1.88"
-description = "Native Rust solver for the budel polygon packing assignment"
+description = "2D irregular nesting in native Rust: packs polygons into a rectangular sheet with optional or mandatory stock and exports placement JSON"
 license = "MIT"
+keywords = ["nesting", "packing", "polygon", "geometry", "optimization"]
+categories = ["algorithms", "mathematics"]
 repository = "https://github.com/dietmarwo/budel-craft"
 
 [features]

@@ -22,6 +22,6 @@ Version 0.2.0 replaces the multi-start search with persistent search on the incu
 - [Implementation log](IMPLEMENTATION_LOG.md)
 - [Original implementation plan](docs/IMPLEMENTATION_PLAN.md)
 
-The six original inputs are in `cases/` with their SHA-256 manifest. The measured layouts, validation reports and SVG examples are included under `evidence/` (0.1.0 records at the top level, 0.2.0 records in `evidence/v0.2.0/`) and `examples/`. The source uses a custom construction and search loop. PackingSolver is an optional external comparison.
+The six original inputs and the later `extreme` case (3,309 figures) are in `cases/` with their SHA-256 manifest. The measured layouts, validation reports and SVG examples are included under `evidence/` (0.1.0 records at the top level, 0.2.0 records in `evidence/v0.2.0/`) and `examples/`. The source uses a custom construction and search loop. PackingSolver is an optional external comparison.
 
 Budel Craft is released under the [MIT License](LICENSE).

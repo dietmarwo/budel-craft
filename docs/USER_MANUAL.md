@@ -138,7 +138,7 @@ python tools/benchmark.py --out out/campaign --cases tiny small \
 python tools/report.py out/campaign/campaign.json --output out/campaign.md
 ```
 
-The supervisor starts subprocesses without a shell and records time, CPU and RSS. With `--pin-cpu`, children are pinned to the first CPUs of the harness's affinity; when you run two campaigns at once, give them different `--cpu-offset` values or their pinned solves and judges share one core. Rerun the same campaign command to fill unfinished runs or validation records. The case, solver and judge hashes are checked before a result is reused. Use `--skip-reference` for explicitly native-only development pilots. Inspect the reports before comparing strict-only and dual-validated runs.
+The supervisor starts subprocesses without a shell and records time, CPU and RSS. With `--pin-cpu`, children are pinned to the first CPUs of the harness's affinity; when you run two campaigns at once, give them different `--cpu-offset` values or their pinned solves and judges share one core. `leader_peak_rss_bytes` is the solver's own high-water mark after `exec`, sampled every 2 ms for the first 200 ms and every 25 ms afterwards; runs of a few milliseconds give only a lower bound. `wait4_maxrss_bytes` also counts the forked copy of the harness before `exec` and is kept for reference only. Rerun the same campaign command to fill unfinished runs or validation records. The case, solver and judge hashes are checked before a result is reused. Use `--skip-reference` for explicitly native-only development pilots. Inspect the reports before comparing strict-only and dual-validated runs.
 
 Install `packingsolver==0.1.1296` to enable the optional external arm.
 

@@ -1,0 +1,228 @@
+{
+  "spec": {
+    "case": "extreme",
+    "case_sha256": "22ffa8f9cd04439cd54c22eaf7ba8182b49742e20a0158a0df351a8f10b471c8",
+    "binary_sha256": "4960464367b82ad93842c67c56ffec8dc26d9a0007529657b81be5b49ce1ba7b",
+    "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+    "algorithm": "lns",
+    "seed": 3,
+    "workers": 1,
+    "seconds": 184,
+    "memory_mib": 1024,
+    "judge_seconds": 240.0,
+    "eval_limit": null,
+    "solver_flags": [],
+    "policy_sha256": null,
+    "reference": true,
+    "engine": "native",
+    "pin_cpu": true,
+    "external_version": null,
+    "adapter_sha256": null
+  },
+  "execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 1.0586980729999595,
+    "cpu_s": 0.927272,
+    "leader_peak_rss_bytes": 183009280,
+    "sampled_group_peak_rss_bytes": 183009280,
+    "wait4_maxrss_bytes": 182878208,
+    "harness_rss_at_spawn_bytes": 186220544,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      1
+    ]
+  },
+  "metrics": {
+    "case": "extreme",
+    "case_sha256": "22ffa8f9cd04439cd54c22eaf7ba8182b49742e20a0158a0df351a8f10b471c8",
+    "config_sha256": "a049d1379f15a5e15efdafb78a50cd728e2ed6fe35b368edb58156573bc30102",
+    "config": {
+      "algorithm": "lns",
+      "seed": 3,
+      "workers": 1,
+      "cache_bytes": 67108864,
+      "edge_tree": true,
+      "pair_hints": true,
+      "policy": {
+        "stock_area": 0.32,
+        "box_area": 0.58,
+        "extent": 0.1,
+        "rect_waste": 0.3,
+        "rect_height": 0.12,
+        "contact_rate": 0.28,
+        "gap_trials": 120,
+        "rebuild_size": 8,
+        "blocker_weight": 0.36,
+        "restarts": 5,
+        "slide_sweeps": 3,
+        "late_length": 0,
+        "separate_moves": 600,
+        "best_of": 1,
+        "pocket_trials": 16,
+        "rescue_after": 2
+      },
+      "features": {
+        "slide": true,
+        "pockets": true,
+        "late_acceptance": true,
+        "separate": true,
+        "share": true
+      }
+    },
+    "termination": "available-area-complete",
+    "requested_seconds": 184.0,
+    "runtime_s": 1.014491504,
+    "cumulative_s": 1.014491504,
+    "preprocess_s": 0.410158059,
+    "overshoot_s": 0.0,
+    "requested_proposals": null,
+    "proposals": 234870,
+    "cumulative_proposals": 234870,
+    "first_complete_s": 1.006140189,
+    "best": {
+      "strict_valid": true,
+      "complete": true,
+      "seated": 3309,
+      "available": 3309,
+      "area": 501755.01755000046,
+      "coverage": 21.89731245308547,
+      "available_fraction": 1.0,
+      "certified_gap": 2.800001,
+      "pair_checks": 5498,
+      "checked_all": true,
+      "violations": []
+    },
+    "certified_answer_written": true,
+    "candidate_validations": 7,
+    "superseded_candidates": 38,
+    "stats": {
+      "kernel": {
+        "candidates": 234870,
+        "pairs": 314077,
+        "nodes": 8656422,
+        "ray_nodes": 657785,
+        "edges": 872673,
+        "disc_rejections": 8292,
+        "orientations": 13494,
+        "cache_hits": 3503,
+        "cache_peak_bytes": 67108864
+      },
+      "attempts": 1,
+      "rectangle_insertions": 2596,
+      "gap_insertions": 713,
+      "move_trials": 218486,
+      "moves": 46,
+      "rebuild_trials": 0,
+      "rebuilds": 0,
+      "repair_trials": 0,
+      "repairs": 0,
+      "fcmaes_evaluations": 0,
+      "slides": 3929,
+      "pocket_trials": 0,
+      "pocket_insertions": 0,
+      "late_accepts": 0,
+      "separation_trials": 0,
+      "separations": 0,
+      "separation_moves": 0,
+      "migrations": 0,
+      "persistent_rounds": 0,
+      "incumbent_resets": 0
+    }
+  },
+  "strict": {
+    "strict_valid": true,
+    "complete": true,
+    "seated": 3309,
+    "available": 3309,
+    "area": 501755.01755000046,
+    "coverage": 21.89731245308547,
+    "available_fraction": 1.0,
+    "certified_gap": 2.800001,
+    "pair_checks": 5498,
+    "checked_all": true,
+    "violations": []
+  },
+  "judge": {
+    "author": "budel-craft",
+    "below_target": {
+      "half": 0,
+      "quarter": 0,
+      "target": 0
+    },
+    "border_free_share": 31.6,
+    "case": "extreme",
+    "coverage": 21.9,
+    "coverage_usable": 23.51,
+    "declared": {
+      "budget": null,
+      "machine": "linux x86_64 (1 search workers)",
+      "runtime_s": 1.010648267
+    },
+    "ink_area": 501755.0,
+    "pairs_checked": 10265,
+    "regime": "layered",
+    "runtime_s": 69.82,
+    "seated": 3309,
+    "seated_by_class": [
+      {
+        "available": 2138,
+        "seated": 2138,
+        "size": 33.0
+      },
+      {
+        "available": 270,
+        "seated": 270,
+        "size": 18.1
+      },
+      {
+        "available": 901,
+        "seated": 901,
+        "size": 9.1
+      }
+    ],
+    "shapes": 3309,
+    "tightest": 2.8,
+    "valid": true,
+    "violations": []
+  },
+  "answer_sha256": "dfbff865b251fc7d940f4d5492cea6433070b6011ac8bb805455da90f5822d91",
+  "validation_pending": false,
+  "eligible": true,
+  "strict_execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 0.3571276630000284,
+    "cpu_s": 0.31010299999999996,
+    "leader_peak_rss_bytes": 38211584,
+    "sampled_group_peak_rss_bytes": 38211584,
+    "wait4_maxrss_bytes": 180871168,
+    "harness_rss_at_spawn_bytes": 186220544,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      1
+    ],
+    "terminal": true
+  },
+  "judge_execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 70.32673728100008,
+    "cpu_s": 68.981507,
+    "leader_peak_rss_bytes": 224657408,
+    "sampled_group_peak_rss_bytes": 224657408,
+    "wait4_maxrss_bytes": 224497664,
+    "harness_rss_at_spawn_bytes": 186220544,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      1
+    ],
+    "terminal": true
+  }
+}

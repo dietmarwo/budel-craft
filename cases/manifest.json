@@ -1,6 +1,12 @@
 {
   "cases": [
     {
+      "file": "extreme.json",
+      "sha256": "22ffa8f9cd04439cd54c22eaf7ba8182b49742e20a0158a0df351a8f10b471c8",
+      "bytes": 9570562,
+      "items": 3309
+    },
+    {
       "file": "large.json",
       "sha256": "99d8d8135395435e91510dbce52b9d7679879dc06a6bc19e21bf4bfee67d7123",
       "bytes": 4281064,

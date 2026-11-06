@@ -14,16 +14,17 @@ Version 0.2.0 turns the 0.1.0 multi-start heuristic into a persistent search on 
 
 Each component has a switch and a policy field. Defaults follow the measurements: late acceptance is off, and pockets and separation run only after the search stalls.
 
-On the same host and binary, the default raises mean sheet coverage from 47.34% to 51.48% on medium and from 46.26% to 50.28% on layered-hard, compared with the 0.1.0 search (`multistart`). All 18 final-campaign answers pass the native strict validator and the Python judge. Every run exited normally within its budget. Medium seats 311 of 312 figures on two of three seeds. Four cases stay at their stock upper bound and now finish in under 0.5 s. See [the results](docs/PERFORMANCE.md).
+On the same host and binary, the default raises mean sheet coverage from 47.34% to 51.51% on medium and from 46.26% to 50.51% on layered-hard, compared with the 0.1.0 search (`multistart`). The final campaign covers seven cases: the six original ones and `extreme` (3,309 figures, added in I36). All 21 answers pass the native strict validator and the Python judge, and every run exited normally within its budget. Medium reaches its stock bound on two of three seeds. Five cases reach their stock bound on every seed and finish in about 1 s or less. See [the results](docs/PERFORMANCE.md).
 
 | Case | Seated, seeds 1/2/3 | Sheet coverage, seeds 1/2/3 | Stock bound |
 | --- | --- | --- | ---: |
 | tiny | 2/2/2 of 2 | 5.0000% (all) | 5.0000% |
 | small | 40/40/40 of 40 | 23.2899% (all) | 23.2899% |
-| medium | 311/311/308 of 312 | 51.5666 / 51.5658 / 51.3097% | 51.5850% |
+| medium | 312/312/310 of 312 | 51.5850 / 51.5850 / 51.3630% | 51.5850% |
 | large | 2,127/2,127/2,127 of 2,127 | 47.8051% (all) | 47.8051% |
 | uniform-hard | 1,008/1,008/1,008 of 1,008 | 26.9808% (all) | 26.9808% |
-| layered-hard | 1,154/1,153/1,156 of 1,184 | 49.9825 / 50.5702 / 50.2949% | 51.9847% |
+| layered-hard | 1,155/1,165/1,159 of 1,184 | 50.0790 / 50.9213 / 50.5413% | 51.9847% |
+| extreme | 3,309/3,309/3,309 of 3,309 | 21.8973% (all) | 21.8973% |
 
 The 0.1.0 log is in [docs/IMPLEMENTATION_LOG_0.1.0.md](docs/IMPLEMENTATION_LOG_0.1.0.md).
 
@@ -43,6 +44,7 @@ The 0.1.0 log is in [docs/IMPLEMENTATION_LOG_0.1.0.md](docs/IMPLEMENTATION_LOG_0
 | I33 | **Ablations** (medium 14 s and 6 s, layered-hard 65 s, three seeds). Slide compaction was the largest component (1.3 points on medium). Pockets and separation were neutral. Added `rescue_after` to run them only after stalled rounds; the gated variant tied on layered-hard and gave the best 6 s medium mean. A patient 216 s layered-hard check gave 50.74 / 51.31% gated against 50.60 / 51.31% without them. |
 | I34 | **Policy tuning.** The tuner covers ten search-control fields, averages 5 training seeds per candidate, always evaluates the default first, and checks the selected and default policies on 5 held-out seeds. BiteOpt (fcmaes-core 0.1.3) selected a policy at 98.27% training, but it reached 97.82% held-out against 98.16% for the default. Random search found nothing better. The default stays. |
 | I35 | **Final checks.** Applied rustfmt and the Clippy 1.97 fixes (`is_multiple_of`, let-chains, both available at the declared Rust 1.88). Reran the six-case campaign with three seeds and the same-host `multistart` arm using the final binary. Updated the architecture, manual, README and performance documents and packaged the source and evidence. |
+| I36 | **`extreme` case and memory measurement.** Added `cases/extreme.json` (3,309 optional figures, 606,594 vertices, 2.8-unit gap, 1800×1273 sheet, 184 s interactive budget) to the manifest and the harness case lists. No solver change; the rebuilt binary has the 0.2.0 hash. Every seed seats all figures (the 21.8973% stock bound) in about 1 s; the judge needs about 72 s per answer. The rerun showed about 172 MiB peak RSS even for tiny, because `wait4`'s `ru_maxrss` counts the forked copy of the harness before `exec`, and the harness held the parsed `extreme` case. The supervisor now records the solver's own `VmHWM`, sampled every 2 ms for the first 200 ms and every 25 ms afterwards, and uses only post-`exec` samples for the RSS limit; the raw value stays as `wait4_maxrss_bytes`. The seven-case campaign was rerun with the fixed harness. A first rerun with the old harness gave the same verdicts but inflated memory figures and was discarded. |
 
 ## Review decisions
 
@@ -57,9 +59,9 @@ The 0.1.0 log is in [docs/IMPLEMENTATION_LOG_0.1.0.md](docs/IMPLEMENTATION_LOG_0
 
 - `cargo fmt --check` passes. `cargo clippy --all-targets --all-features -- -D warnings` passes with Clippy 1.97.
 - `cargo test --locked --all-features` passes 14 tests: 5 new unit tests, 3 accelerator tests and 6 contract tests, including the 10,000 rational-threshold decisions and the 700 transformed-body comparisons.
-- `python tools/robustness.py` passes: resume, cumulative accounting, changed input, truncated checkpoint, protected input, shared work limit, SIGTERM preservation, process-group timeout, allocation and log limits.
+- `python tools/robustness.py` passes, also after the I36 supervisor change: resume, cumulative accounting, changed input, truncated checkpoint, protected input, shared work limit, SIGTERM preservation, process-group timeout, allocation and log limits.
 - `python tools/judge_audit.py` reproduces the five recorded judge behaviours.
-- Every final campaign answer passes the native strict validator and the Python judge. The six example answers in `examples/answers` come from that campaign and keep their recorded hashes.
+- Every answer of both final campaigns passes the native strict validator and the Python judge. The six original example answers in `examples/answers` come from the first final campaign, `extreme.answer.json` from the seven-case campaign, and all keep their recorded hashes.
 - The packaged ZIP was extracted into a clean directory. There, `cargo build --release --locked`, `cargo test --locked --all-features` (offline, from the lockfile), `cargo fmt --check`, the judge audit and a bounded tiny/small smoke campaign all passed. The six example answers validated, and their SHA-256 values match the campaign records.
 
 ## Reproduction
@@ -73,7 +75,7 @@ python tools/judge_audit.py
 python tools/robustness.py --binary target/release/budel
 python tools/benchmark.py --out out/final-a --cases medium layered-hard --algorithms lns \
   --seeds 1 2 3 --budget interactive --workers 1 --pin-cpu --cpu-offset 0 --judge-seconds 240 &
-python tools/benchmark.py --out out/final-b --cases tiny small large uniform-hard --algorithms lns \
+python tools/benchmark.py --out out/final-b --cases tiny small large uniform-hard extreme --algorithms lns \
   --seeds 1 2 3 --budget interactive --workers 1 --pin-cpu --cpu-offset 1 --judge-seconds 240
 wait
 python tools/report.py out/final-a/campaign.json out/final-b/campaign.json

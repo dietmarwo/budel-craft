@@ -1,0 +1,233 @@
+{
+  "spec": {
+    "case": "medium",
+    "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+    "binary_sha256": "4960464367b82ad93842c67c56ffec8dc26d9a0007529657b81be5b49ce1ba7b",
+    "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+    "algorithm": "lns",
+    "seed": 1,
+    "workers": 1,
+    "seconds": 14,
+    "memory_mib": 1024,
+    "judge_seconds": 240.0,
+    "eval_limit": null,
+    "solver_flags": [],
+    "policy_sha256": null,
+    "reference": true,
+    "engine": "native",
+    "pin_cpu": true,
+    "external_version": null,
+    "adapter_sha256": null
+  },
+  "execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 9.279466968000065,
+    "cpu_s": 8.823556,
+    "leader_peak_rss_bytes": 90882048,
+    "sampled_group_peak_rss_bytes": 90882048,
+    "wait4_maxrss_bytes": 90931200,
+    "harness_rss_at_spawn_bytes": 82493440,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      0
+    ]
+  },
+  "metrics": {
+    "case": "medium",
+    "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+    "config_sha256": "b0b8b3eec4a73e9d1c7079b445fe6e4a25521a4d5341263730acf17bea52c9fa",
+    "config": {
+      "algorithm": "lns",
+      "seed": 1,
+      "workers": 1,
+      "cache_bytes": 67108864,
+      "edge_tree": true,
+      "pair_hints": true,
+      "policy": {
+        "stock_area": 0.32,
+        "box_area": 0.58,
+        "extent": 0.1,
+        "rect_waste": 0.3,
+        "rect_height": 0.12,
+        "contact_rate": 0.28,
+        "gap_trials": 120,
+        "rebuild_size": 8,
+        "blocker_weight": 0.36,
+        "restarts": 5,
+        "slide_sweeps": 3,
+        "late_length": 0,
+        "separate_moves": 600,
+        "best_of": 1,
+        "pocket_trials": 16,
+        "rescue_after": 2
+      },
+      "features": {
+        "slide": true,
+        "pockets": true,
+        "late_acceptance": true,
+        "separate": true,
+        "share": true
+      }
+    },
+    "termination": "available-area-complete",
+    "requested_seconds": 14.0,
+    "runtime_s": 9.263381267,
+    "cumulative_s": 9.263381267,
+    "preprocess_s": 0.033156462,
+    "overshoot_s": 0.0,
+    "requested_proposals": null,
+    "proposals": 4164172,
+    "cumulative_proposals": 4164172,
+    "first_complete_s": 9.26181235,
+    "best": {
+      "strict_valid": true,
+      "complete": true,
+      "seated": 312,
+      "available": 312,
+      "area": 1485648.4536000001,
+      "coverage": 51.585015750000004,
+      "available_fraction": 1.0,
+      "certified_gap": 3.000001,
+      "pair_checks": 692,
+      "checked_all": true,
+      "violations": []
+    },
+    "certified_answer_written": true,
+    "candidate_validations": 117,
+    "superseded_candidates": 89,
+    "stats": {
+      "kernel": {
+        "candidates": 4164172,
+        "pairs": 6268605,
+        "nodes": 154133923,
+        "ray_nodes": 34451617,
+        "edges": 14643802,
+        "disc_rejections": 479694,
+        "orientations": 377154,
+        "cache_hits": 935840,
+        "cache_peak_bytes": 67108864
+      },
+      "attempts": 5,
+      "rectangle_insertions": 662,
+      "gap_insertions": 671,
+      "move_trials": 3076346,
+      "moves": 826,
+      "rebuild_trials": 3243,
+      "rebuilds": 200,
+      "repair_trials": 0,
+      "repairs": 0,
+      "fcmaes_evaluations": 0,
+      "slides": 1519,
+      "pocket_trials": 17931,
+      "pocket_insertions": 5,
+      "late_accepts": 0,
+      "separation_trials": 74,
+      "separations": 4,
+      "separation_moves": 2113,
+      "migrations": 0,
+      "persistent_rounds": 219,
+      "incumbent_resets": 0
+    }
+  },
+  "strict": {
+    "strict_valid": true,
+    "complete": true,
+    "seated": 312,
+    "available": 312,
+    "area": 1485648.4536000001,
+    "coverage": 51.585015750000004,
+    "available_fraction": 1.0,
+    "certified_gap": 3.000001,
+    "pair_checks": 692,
+    "checked_all": true,
+    "violations": []
+  },
+  "judge": {
+    "author": "budel-craft",
+    "below_target": {
+      "half": 0,
+      "quarter": 0,
+      "target": 0
+    },
+    "border_free_share": 33.2,
+    "case": "medium",
+    "coverage": 51.59,
+    "coverage_usable": 54.9,
+    "declared": {
+      "budget": null,
+      "machine": "linux x86_64 (1 search workers)",
+      "runtime_s": 9.262811241
+    },
+    "ink_area": 1485648.5,
+    "pairs_checked": 860,
+    "regime": "layered",
+    "runtime_s": 4.59,
+    "seated": 312,
+    "seated_by_class": [
+      {
+        "available": 112,
+        "seated": 112,
+        "size": 176.5
+      },
+      {
+        "available": 1,
+        "seated": 1,
+        "size": 150.0
+      },
+      {
+        "available": 42,
+        "seated": 42,
+        "size": 105.9
+      },
+      {
+        "available": 157,
+        "seated": 157,
+        "size": 63.5
+      }
+    ],
+    "shapes": 312,
+    "tightest": 3.0,
+    "valid": true,
+    "violations": []
+  },
+  "answer_sha256": "fb1d7f8c0fa2d3530638e82a82f4dc52e18db17bc9c00741255f9e474b67b861",
+  "validation_pending": false,
+  "eligible": true,
+  "strict_execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 0.05680475900010151,
+    "cpu_s": 0.045408,
+    "leader_peak_rss_bytes": 6803456,
+    "sampled_group_peak_rss_bytes": 6803456,
+    "wait4_maxrss_bytes": 77381632,
+    "harness_rss_at_spawn_bytes": 82558976,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      0
+    ],
+    "terminal": true
+  },
+  "judge_execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 4.743261404999998,
+    "cpu_s": 4.439156,
+    "leader_peak_rss_bytes": 103006208,
+    "sampled_group_peak_rss_bytes": 103006208,
+    "wait4_maxrss_bytes": 103006208,
+    "harness_rss_at_spawn_bytes": 82558976,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      0
+    ],
+    "terminal": true
+  }
+}

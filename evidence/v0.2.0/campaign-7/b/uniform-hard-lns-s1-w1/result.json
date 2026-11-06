@@ -1,0 +1,218 @@
+{
+  "spec": {
+    "case": "uniform-hard",
+    "case_sha256": "2a823069a98be1f7c2fb4461853956b4857eb8cbbce3f929a124fcaa5223862a",
+    "binary_sha256": "4960464367b82ad93842c67c56ffec8dc26d9a0007529657b81be5b49ce1ba7b",
+    "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+    "algorithm": "lns",
+    "seed": 1,
+    "workers": 1,
+    "seconds": 56,
+    "memory_mib": 1024,
+    "judge_seconds": 240.0,
+    "eval_limit": null,
+    "solver_flags": [],
+    "policy_sha256": null,
+    "reference": true,
+    "engine": "native",
+    "pin_cpu": true,
+    "external_version": null,
+    "adapter_sha256": null
+  },
+  "execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 0.1820212889999766,
+    "cpu_s": 0.143278,
+    "leader_peak_rss_bytes": 30121984,
+    "sampled_group_peak_rss_bytes": 30121984,
+    "wait4_maxrss_bytes": 180871168,
+    "harness_rss_at_spawn_bytes": 186220544,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      1
+    ]
+  },
+  "metrics": {
+    "case": "uniform-hard",
+    "case_sha256": "2a823069a98be1f7c2fb4461853956b4857eb8cbbce3f929a124fcaa5223862a",
+    "config_sha256": "b0b8b3eec4a73e9d1c7079b445fe6e4a25521a4d5341263730acf17bea52c9fa",
+    "config": {
+      "algorithm": "lns",
+      "seed": 1,
+      "workers": 1,
+      "cache_bytes": 67108864,
+      "edge_tree": true,
+      "pair_hints": true,
+      "policy": {
+        "stock_area": 0.32,
+        "box_area": 0.58,
+        "extent": 0.1,
+        "rect_waste": 0.3,
+        "rect_height": 0.12,
+        "contact_rate": 0.28,
+        "gap_trials": 120,
+        "rebuild_size": 8,
+        "blocker_weight": 0.36,
+        "restarts": 5,
+        "slide_sweeps": 3,
+        "late_length": 0,
+        "separate_moves": 600,
+        "best_of": 1,
+        "pocket_trials": 16,
+        "rescue_after": 2
+      },
+      "features": {
+        "slide": true,
+        "pockets": true,
+        "late_acceptance": true,
+        "separate": true,
+        "share": true
+      }
+    },
+    "termination": "available-area-complete",
+    "requested_seconds": 56.0,
+    "runtime_s": 0.168487392,
+    "cumulative_s": 0.168487392,
+    "preprocess_s": 0.077979085,
+    "overshoot_s": 0.0,
+    "requested_proposals": null,
+    "proposals": 31967,
+    "cumulative_proposals": 31967,
+    "first_complete_s": 0.162509727,
+    "best": {
+      "strict_valid": true,
+      "complete": true,
+      "seated": 1008,
+      "available": 1008,
+      "area": 777045.8169499998,
+      "coverage": 26.980757532986104,
+      "available_fraction": 1.0,
+      "certified_gap": 3.000001,
+      "pair_checks": 0,
+      "checked_all": true,
+      "violations": []
+    },
+    "certified_answer_written": true,
+    "candidate_validations": 3,
+    "superseded_candidates": 5,
+    "stats": {
+      "kernel": {
+        "candidates": 31967,
+        "pairs": 42394,
+        "nodes": 1136152,
+        "ray_nodes": 84043,
+        "edges": 102579,
+        "disc_rejections": 787,
+        "orientations": 1008,
+        "cache_hits": 0,
+        "cache_peak_bytes": 11060704
+      },
+      "attempts": 1,
+      "rectangle_insertions": 1008,
+      "gap_insertions": 0,
+      "move_trials": 30974,
+      "moves": 0,
+      "rebuild_trials": 0,
+      "rebuilds": 0,
+      "repair_trials": 0,
+      "repairs": 0,
+      "fcmaes_evaluations": 0,
+      "slides": 551,
+      "pocket_trials": 0,
+      "pocket_insertions": 0,
+      "late_accepts": 0,
+      "separation_trials": 0,
+      "separations": 0,
+      "separation_moves": 0,
+      "migrations": 0,
+      "persistent_rounds": 0,
+      "incumbent_resets": 0
+    }
+  },
+  "strict": {
+    "strict_valid": true,
+    "complete": true,
+    "seated": 1008,
+    "available": 1008,
+    "area": 777045.8169499998,
+    "coverage": 26.980757532986104,
+    "available_fraction": 1.0,
+    "certified_gap": 3.000001,
+    "pair_checks": 0,
+    "checked_all": true,
+    "violations": []
+  },
+  "judge": {
+    "author": "budel-craft",
+    "below_target": {
+      "half": 0,
+      "quarter": 0,
+      "target": 0
+    },
+    "border_free_share": 35.8,
+    "case": "uniform-hard",
+    "coverage": 26.98,
+    "coverage_usable": 28.72,
+    "declared": {
+      "budget": null,
+      "machine": "linux x86_64 (1 search workers)",
+      "runtime_s": 0.166391633
+    },
+    "ink_area": 777045.8,
+    "pairs_checked": 3255,
+    "regime": "uniform",
+    "runtime_s": 20.5,
+    "seated": 1008,
+    "seated_by_class": [
+      {
+        "available": 1008,
+        "seated": 1008,
+        "size": 49.1
+      }
+    ],
+    "shapes": 1008,
+    "tightest": 3.0,
+    "valid": true,
+    "violations": []
+  },
+  "answer_sha256": "0b3e8ad67fe253eb241b38e51273b910e23c31b0378b63fa2bf2654ec00599d9",
+  "validation_pending": false,
+  "eligible": true,
+  "strict_execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 0.09925904799990803,
+    "cpu_s": 0.072298,
+    "leader_peak_rss_bytes": 12894208,
+    "sampled_group_peak_rss_bytes": 12894208,
+    "wait4_maxrss_bytes": 180871168,
+    "harness_rss_at_spawn_bytes": 186220544,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      1
+    ],
+    "terminal": true
+  },
+  "judge_execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 20.74431339299997,
+    "cpu_s": 19.429577000000002,
+    "leader_peak_rss_bytes": 134320128,
+    "sampled_group_peak_rss_bytes": 134320128,
+    "wait4_maxrss_bytes": 180871168,
+    "harness_rss_at_spawn_bytes": 186220544,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      1
+    ],
+    "terminal": true
+  }
+}

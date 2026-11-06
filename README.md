@@ -2,6 +2,8 @@
 
 ![layered-hard layouts from versions 0.1.0 and 0.2.0](examples/layered-hard-0.1.0-vs-0.2.0.png)
 
+> **One of 18 related repositories.** The [repository overview](https://github.com/dietmarwo/fcmaes-rust/blob/main/docs/repositories.md) shows what each one does and how they connect.
+
 Budel Craft packs the supplied irregular figures into a rectangular sheet. It uses native Rust geometry, retains the original polygons, and exports the assignment's placement JSON. For optional stock it maximizes placed scoring area. For mandatory stock it seeks a complete feasible layout.
 
 ```bash

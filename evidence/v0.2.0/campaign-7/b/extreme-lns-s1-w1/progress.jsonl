@@ -1,0 +1,7 @@
+{"area":173729.6054499998,"discovered_s":0.395523023,"elapsed_s":0.402016419,"proposals":753,"seated":640,"stage":"rectangle-checkpoint"}
+{"area":277727.9117999998,"discovered_s":0.420507674,"elapsed_s":0.429561337,"proposals":1313,"seated":1152,"stage":"rectangle-checkpoint"}
+{"area":388096.2103000001,"discovered_s":0.450684559,"elapsed_s":0.455948318,"proposals":1805,"seated":1792,"stage":"rectangle-checkpoint"}
+{"area":477033.73030000064,"discovered_s":0.485107122,"elapsed_s":0.500902601,"proposals":2589,"seated":2432,"stage":"rectangle-checkpoint"}
+{"area":481641.9750000001,"discovered_s":0.502043997,"elapsed_s":0.538723074,"proposals":42305,"seated":2596,"stage":"rectangles"}
+{"area":485002.8039500001,"discovered_s":0.682411769,"elapsed_s":0.815540805,"proposals":231761,"seated":2628,"stage":"gap-checkpoint"}
+{"area":501755.01755000046,"discovered_s":0.825049877,"elapsed_s":0.922381233,"proposals":232784,"seated":3309,"stage":"gap-fill"}

@@ -1,0 +1,1450 @@
+{
+  "planned_runs": 6,
+  "completed_runs": 6,
+  "pending_validations": 0,
+  "runs": [
+    {
+      "spec": {
+        "case": "medium",
+        "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+        "binary_sha256": "4960464367b82ad93842c67c56ffec8dc26d9a0007529657b81be5b49ce1ba7b",
+        "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+        "algorithm": "lns",
+        "seed": 1,
+        "workers": 1,
+        "seconds": 14,
+        "memory_mib": 1024,
+        "judge_seconds": 240.0,
+        "eval_limit": null,
+        "solver_flags": [],
+        "policy_sha256": null,
+        "reference": true,
+        "engine": "native",
+        "pin_cpu": true,
+        "external_version": null,
+        "adapter_sha256": null
+      },
+      "execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 9.279466968000065,
+        "cpu_s": 8.823556,
+        "leader_peak_rss_bytes": 90882048,
+        "sampled_group_peak_rss_bytes": 90882048,
+        "wait4_maxrss_bytes": 90931200,
+        "harness_rss_at_spawn_bytes": 82493440,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ]
+      },
+      "metrics": {
+        "case": "medium",
+        "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+        "config_sha256": "b0b8b3eec4a73e9d1c7079b445fe6e4a25521a4d5341263730acf17bea52c9fa",
+        "config": {
+          "algorithm": "lns",
+          "seed": 1,
+          "workers": 1,
+          "cache_bytes": 67108864,
+          "edge_tree": true,
+          "pair_hints": true,
+          "policy": {
+            "stock_area": 0.32,
+            "box_area": 0.58,
+            "extent": 0.1,
+            "rect_waste": 0.3,
+            "rect_height": 0.12,
+            "contact_rate": 0.28,
+            "gap_trials": 120,
+            "rebuild_size": 8,
+            "blocker_weight": 0.36,
+            "restarts": 5,
+            "slide_sweeps": 3,
+            "late_length": 0,
+            "separate_moves": 600,
+            "best_of": 1,
+            "pocket_trials": 16,
+            "rescue_after": 2
+          },
+          "features": {
+            "slide": true,
+            "pockets": true,
+            "late_acceptance": true,
+            "separate": true,
+            "share": true
+          }
+        },
+        "termination": "available-area-complete",
+        "requested_seconds": 14.0,
+        "runtime_s": 9.263381267,
+        "cumulative_s": 9.263381267,
+        "preprocess_s": 0.033156462,
+        "overshoot_s": 0.0,
+        "requested_proposals": null,
+        "proposals": 4164172,
+        "cumulative_proposals": 4164172,
+        "first_complete_s": 9.26181235,
+        "best": {
+          "strict_valid": true,
+          "complete": true,
+          "seated": 312,
+          "available": 312,
+          "area": 1485648.4536000001,
+          "coverage": 51.585015750000004,
+          "available_fraction": 1.0,
+          "certified_gap": 3.000001,
+          "pair_checks": 692,
+          "checked_all": true,
+          "violations": []
+        },
+        "certified_answer_written": true,
+        "candidate_validations": 117,
+        "superseded_candidates": 89,
+        "stats": {
+          "kernel": {
+            "candidates": 4164172,
+            "pairs": 6268605,
+            "nodes": 154133923,
+            "ray_nodes": 34451617,
+            "edges": 14643802,
+            "disc_rejections": 479694,
+            "orientations": 377154,
+            "cache_hits": 935840,
+            "cache_peak_bytes": 67108864
+          },
+          "attempts": 5,
+          "rectangle_insertions": 662,
+          "gap_insertions": 671,
+          "move_trials": 3076346,
+          "moves": 826,
+          "rebuild_trials": 3243,
+          "rebuilds": 200,
+          "repair_trials": 0,
+          "repairs": 0,
+          "fcmaes_evaluations": 0,
+          "slides": 1519,
+          "pocket_trials": 17931,
+          "pocket_insertions": 5,
+          "late_accepts": 0,
+          "separation_trials": 74,
+          "separations": 4,
+          "separation_moves": 2113,
+          "migrations": 0,
+          "persistent_rounds": 219,
+          "incumbent_resets": 0
+        }
+      },
+      "strict": {
+        "strict_valid": true,
+        "complete": true,
+        "seated": 312,
+        "available": 312,
+        "area": 1485648.4536000001,
+        "coverage": 51.585015750000004,
+        "available_fraction": 1.0,
+        "certified_gap": 3.000001,
+        "pair_checks": 692,
+        "checked_all": true,
+        "violations": []
+      },
+      "judge": {
+        "author": "budel-craft",
+        "below_target": {
+          "half": 0,
+          "quarter": 0,
+          "target": 0
+        },
+        "border_free_share": 33.2,
+        "case": "medium",
+        "coverage": 51.59,
+        "coverage_usable": 54.9,
+        "declared": {
+          "budget": null,
+          "machine": "linux x86_64 (1 search workers)",
+          "runtime_s": 9.262811241
+        },
+        "ink_area": 1485648.5,
+        "pairs_checked": 860,
+        "regime": "layered",
+        "runtime_s": 4.59,
+        "seated": 312,
+        "seated_by_class": [
+          {
+            "available": 112,
+            "seated": 112,
+            "size": 176.5
+          },
+          {
+            "available": 1,
+            "seated": 1,
+            "size": 150.0
+          },
+          {
+            "available": 42,
+            "seated": 42,
+            "size": 105.9
+          },
+          {
+            "available": 157,
+            "seated": 157,
+            "size": 63.5
+          }
+        ],
+        "shapes": 312,
+        "tightest": 3.0,
+        "valid": true,
+        "violations": []
+      },
+      "answer_sha256": "fb1d7f8c0fa2d3530638e82a82f4dc52e18db17bc9c00741255f9e474b67b861",
+      "validation_pending": false,
+      "eligible": true,
+      "strict_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 0.05680475900010151,
+        "cpu_s": 0.045408,
+        "leader_peak_rss_bytes": 6803456,
+        "sampled_group_peak_rss_bytes": 6803456,
+        "wait4_maxrss_bytes": 77381632,
+        "harness_rss_at_spawn_bytes": 82558976,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      },
+      "judge_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 4.743261404999998,
+        "cpu_s": 4.439156,
+        "leader_peak_rss_bytes": 103006208,
+        "sampled_group_peak_rss_bytes": 103006208,
+        "wait4_maxrss_bytes": 103006208,
+        "harness_rss_at_spawn_bytes": 82558976,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      }
+    },
+    {
+      "spec": {
+        "case": "medium",
+        "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+        "binary_sha256": "4960464367b82ad93842c67c56ffec8dc26d9a0007529657b81be5b49ce1ba7b",
+        "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+        "algorithm": "lns",
+        "seed": 2,
+        "workers": 1,
+        "seconds": 14,
+        "memory_mib": 1024,
+        "judge_seconds": 240.0,
+        "eval_limit": null,
+        "solver_flags": [],
+        "policy_sha256": null,
+        "reference": true,
+        "engine": "native",
+        "pin_cpu": true,
+        "external_version": null,
+        "adapter_sha256": null
+      },
+      "execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 7.864030605000039,
+        "cpu_s": 7.418849,
+        "leader_peak_rss_bytes": 92413952,
+        "sampled_group_peak_rss_bytes": 92413952,
+        "wait4_maxrss_bytes": 92336128,
+        "harness_rss_at_spawn_bytes": 82558976,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ]
+      },
+      "metrics": {
+        "case": "medium",
+        "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+        "config_sha256": "3c6d6fcb1f79d253681ee4024a11167cd16673eb696270135af5f1c34c814634",
+        "config": {
+          "algorithm": "lns",
+          "seed": 2,
+          "workers": 1,
+          "cache_bytes": 67108864,
+          "edge_tree": true,
+          "pair_hints": true,
+          "policy": {
+            "stock_area": 0.32,
+            "box_area": 0.58,
+            "extent": 0.1,
+            "rect_waste": 0.3,
+            "rect_height": 0.12,
+            "contact_rate": 0.28,
+            "gap_trials": 120,
+            "rebuild_size": 8,
+            "blocker_weight": 0.36,
+            "restarts": 5,
+            "slide_sweeps": 3,
+            "late_length": 0,
+            "separate_moves": 600,
+            "best_of": 1,
+            "pocket_trials": 16,
+            "rescue_after": 2
+          },
+          "features": {
+            "slide": true,
+            "pockets": true,
+            "late_acceptance": true,
+            "separate": true,
+            "share": true
+          }
+        },
+        "termination": "available-area-complete",
+        "requested_seconds": 14.0,
+        "runtime_s": 7.841124833,
+        "cumulative_s": 7.841124833,
+        "preprocess_s": 0.033491802,
+        "overshoot_s": 0.0,
+        "requested_proposals": null,
+        "proposals": 3920032,
+        "cumulative_proposals": 3920032,
+        "first_complete_s": 7.839445707,
+        "best": {
+          "strict_valid": true,
+          "complete": true,
+          "seated": 312,
+          "available": 312,
+          "area": 1485648.4536000001,
+          "coverage": 51.585015750000004,
+          "available_fraction": 1.0,
+          "certified_gap": 3.000001,
+          "pair_checks": 689,
+          "checked_all": true,
+          "violations": []
+        },
+        "certified_answer_written": true,
+        "candidate_validations": 94,
+        "superseded_candidates": 133,
+        "stats": {
+          "kernel": {
+            "candidates": 3920032,
+            "pairs": 5830626,
+            "nodes": 145576214,
+            "ray_nodes": 30918646,
+            "edges": 12569395,
+            "disc_rejections": 395847,
+            "orientations": 348478,
+            "cache_hits": 832476,
+            "cache_peak_bytes": 67108864
+          },
+          "attempts": 5,
+          "rectangle_insertions": 674,
+          "gap_insertions": 660,
+          "move_trials": 2965813,
+          "moves": 834,
+          "rebuild_trials": 3223,
+          "rebuilds": 221,
+          "repair_trials": 0,
+          "repairs": 0,
+          "fcmaes_evaluations": 0,
+          "slides": 1783,
+          "pocket_trials": 13932,
+          "pocket_insertions": 8,
+          "late_accepts": 0,
+          "separation_trials": 108,
+          "separations": 1,
+          "separation_moves": 2321,
+          "migrations": 0,
+          "persistent_rounds": 222,
+          "incumbent_resets": 0
+        }
+      },
+      "strict": {
+        "strict_valid": true,
+        "complete": true,
+        "seated": 312,
+        "available": 312,
+        "area": 1485648.4536000001,
+        "coverage": 51.585015750000004,
+        "available_fraction": 1.0,
+        "certified_gap": 3.000001,
+        "pair_checks": 689,
+        "checked_all": true,
+        "violations": []
+      },
+      "judge": {
+        "author": "budel-craft",
+        "below_target": {
+          "half": 0,
+          "quarter": 0,
+          "target": 0
+        },
+        "border_free_share": 33.2,
+        "case": "medium",
+        "coverage": 51.59,
+        "coverage_usable": 54.9,
+        "declared": {
+          "budget": null,
+          "machine": "linux x86_64 (1 search workers)",
+          "runtime_s": 7.840421696
+        },
+        "ink_area": 1485648.5,
+        "pairs_checked": 836,
+        "regime": "layered",
+        "runtime_s": 4.9,
+        "seated": 312,
+        "seated_by_class": [
+          {
+            "available": 112,
+            "seated": 112,
+            "size": 176.5
+          },
+          {
+            "available": 1,
+            "seated": 1,
+            "size": 150.0
+          },
+          {
+            "available": 42,
+            "seated": 42,
+            "size": 105.9
+          },
+          {
+            "available": 157,
+            "seated": 157,
+            "size": 63.5
+          }
+        ],
+        "shapes": 312,
+        "tightest": 3.0,
+        "valid": true,
+        "violations": []
+      },
+      "answer_sha256": "c4cb58f1365e64601e3e9a3e2612822190eaece2eb747745b685801de7bcee8b",
+      "validation_pending": false,
+      "eligible": true,
+      "strict_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 0.040012633000060305,
+        "cpu_s": 0.033628,
+        "leader_peak_rss_bytes": 6627328,
+        "sampled_group_peak_rss_bytes": 6627328,
+        "wait4_maxrss_bytes": 77381632,
+        "harness_rss_at_spawn_bytes": 82558976,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      },
+      "judge_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 5.070224699999926,
+        "cpu_s": 4.7272549999999995,
+        "leader_peak_rss_bytes": 102866944,
+        "sampled_group_peak_rss_bytes": 102907904,
+        "wait4_maxrss_bytes": 102907904,
+        "harness_rss_at_spawn_bytes": 82558976,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      }
+    },
+    {
+      "spec": {
+        "case": "medium",
+        "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+        "binary_sha256": "4960464367b82ad93842c67c56ffec8dc26d9a0007529657b81be5b49ce1ba7b",
+        "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+        "algorithm": "lns",
+        "seed": 3,
+        "workers": 1,
+        "seconds": 14,
+        "memory_mib": 1024,
+        "judge_seconds": 240.0,
+        "eval_limit": null,
+        "solver_flags": [],
+        "policy_sha256": null,
+        "reference": true,
+        "engine": "native",
+        "pin_cpu": true,
+        "external_version": null,
+        "adapter_sha256": null
+      },
+      "execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 13.634354055000017,
+        "cpu_s": 12.417331,
+        "leader_peak_rss_bytes": 92741632,
+        "sampled_group_peak_rss_bytes": 92741632,
+        "wait4_maxrss_bytes": 92639232,
+        "harness_rss_at_spawn_bytes": 82563072,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ]
+      },
+      "metrics": {
+        "case": "medium",
+        "case_sha256": "269b7289e2bf5d865af8aad923db8edc272a3f30f547ed94aae741134cd499c9",
+        "config_sha256": "a049d1379f15a5e15efdafb78a50cd728e2ed6fe35b368edb58156573bc30102",
+        "config": {
+          "algorithm": "lns",
+          "seed": 3,
+          "workers": 1,
+          "cache_bytes": 67108864,
+          "edge_tree": true,
+          "pair_hints": true,
+          "policy": {
+            "stock_area": 0.32,
+            "box_area": 0.58,
+            "extent": 0.1,
+            "rect_waste": 0.3,
+            "rect_height": 0.12,
+            "contact_rate": 0.28,
+            "gap_trials": 120,
+            "rebuild_size": 8,
+            "blocker_weight": 0.36,
+            "restarts": 5,
+            "slide_sweeps": 3,
+            "late_length": 0,
+            "separate_moves": 600,
+            "best_of": 1,
+            "pocket_trials": 16,
+            "rescue_after": 2
+          },
+          "features": {
+            "slide": true,
+            "pockets": true,
+            "late_acceptance": true,
+            "separate": true,
+            "share": true
+          }
+        },
+        "termination": "time-limit",
+        "requested_seconds": 14.0,
+        "runtime_s": 13.619994061,
+        "cumulative_s": 13.619994061,
+        "preprocess_s": 0.038195081,
+        "overshoot_s": 0.0,
+        "requested_proposals": null,
+        "proposals": 5536803,
+        "cumulative_proposals": 5536803,
+        "first_complete_s": null,
+        "best": {
+          "strict_valid": true,
+          "complete": false,
+          "seated": 310,
+          "available": 312,
+          "area": 1479253.0910500002,
+          "coverage": 51.362954550347226,
+          "available_fraction": 0.995695238308563,
+          "certified_gap": 3.000001,
+          "pair_checks": 670,
+          "checked_all": true,
+          "violations": []
+        },
+        "certified_answer_written": true,
+        "candidate_validations": 106,
+        "superseded_candidates": 101,
+        "stats": {
+          "kernel": {
+            "candidates": 5536803,
+            "pairs": 8741031,
+            "nodes": 219645869,
+            "ray_nodes": 49457590,
+            "edges": 18932692,
+            "disc_rejections": 611874,
+            "orientations": 526080,
+            "cache_hits": 1276081,
+            "cache_peak_bytes": 67108864
+          },
+          "attempts": 5,
+          "rectangle_insertions": 672,
+          "gap_insertions": 664,
+          "move_trials": 3923210,
+          "moves": 791,
+          "rebuild_trials": 4405,
+          "rebuilds": 186,
+          "repair_trials": 0,
+          "repairs": 0,
+          "fcmaes_evaluations": 0,
+          "slides": 1645,
+          "pocket_trials": 28474,
+          "pocket_insertions": 7,
+          "late_accepts": 0,
+          "separation_trials": 196,
+          "separations": 3,
+          "separation_moves": 7306,
+          "migrations": 0,
+          "persistent_rounds": 312,
+          "incumbent_resets": 0
+        }
+      },
+      "strict": {
+        "strict_valid": true,
+        "complete": false,
+        "seated": 310,
+        "available": 312,
+        "area": 1479253.0910500002,
+        "coverage": 51.362954550347226,
+        "available_fraction": 0.995695238308563,
+        "certified_gap": 3.000001,
+        "pair_checks": 670,
+        "checked_all": true,
+        "violations": []
+      },
+      "judge": {
+        "author": "budel-craft",
+        "below_target": {
+          "half": 0,
+          "quarter": 0,
+          "target": 0
+        },
+        "border_free_share": 33.5,
+        "case": "medium",
+        "coverage": 51.36,
+        "coverage_usable": 54.67,
+        "declared": {
+          "budget": null,
+          "machine": "linux x86_64 (1 search workers)",
+          "runtime_s": 13.618469984
+        },
+        "ink_area": 1479253.1,
+        "pairs_checked": 839,
+        "regime": "layered",
+        "runtime_s": 4.88,
+        "seated": 310,
+        "seated_by_class": [
+          {
+            "available": 112,
+            "seated": 112,
+            "size": 176.5
+          },
+          {
+            "available": 1,
+            "seated": 1,
+            "size": 150.0
+          },
+          {
+            "available": 42,
+            "seated": 40,
+            "size": 105.9
+          },
+          {
+            "available": 157,
+            "seated": 157,
+            "size": 63.5
+          }
+        ],
+        "shapes": 312,
+        "tightest": 3.0,
+        "valid": true,
+        "violations": []
+      },
+      "answer_sha256": "bdb9db0827b57f67a6098ce66315d1d185e4dc9eae7f08c859ed5c15db3d5f21",
+      "validation_pending": false,
+      "eligible": true,
+      "strict_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 0.0411282239999764,
+        "cpu_s": 0.033214,
+        "leader_peak_rss_bytes": 6795264,
+        "sampled_group_peak_rss_bytes": 6795264,
+        "wait4_maxrss_bytes": 77385728,
+        "harness_rss_at_spawn_bytes": 82563072,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      },
+      "judge_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 5.047647341999891,
+        "cpu_s": 4.775848000000001,
+        "leader_peak_rss_bytes": 102842368,
+        "sampled_group_peak_rss_bytes": 102842368,
+        "wait4_maxrss_bytes": 102727680,
+        "harness_rss_at_spawn_bytes": 82563072,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      }
+    },
+    {
+      "spec": {
+        "case": "layered-hard",
+        "case_sha256": "f60887e32e825d46e2b74bac12ed6fded060bf20a8fdf9d2e3ee9797e83d0688",
+        "binary_sha256": "4960464367b82ad93842c67c56ffec8dc26d9a0007529657b81be5b49ce1ba7b",
+        "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+        "algorithm": "lns",
+        "seed": 1,
+        "workers": 1,
+        "seconds": 65,
+        "memory_mib": 1024,
+        "judge_seconds": 240.0,
+        "eval_limit": null,
+        "solver_flags": [],
+        "policy_sha256": null,
+        "reference": true,
+        "engine": "native",
+        "pin_cpu": true,
+        "external_version": null,
+        "adapter_sha256": null
+      },
+      "execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 64.300772682,
+        "cpu_s": 60.667173999999996,
+        "leader_peak_rss_bytes": 124203008,
+        "sampled_group_peak_rss_bytes": 124203008,
+        "wait4_maxrss_bytes": 124071936,
+        "harness_rss_at_spawn_bytes": 82563072,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ]
+      },
+      "metrics": {
+        "case": "layered-hard",
+        "case_sha256": "f60887e32e825d46e2b74bac12ed6fded060bf20a8fdf9d2e3ee9797e83d0688",
+        "config_sha256": "b0b8b3eec4a73e9d1c7079b445fe6e4a25521a4d5341263730acf17bea52c9fa",
+        "config": {
+          "algorithm": "lns",
+          "seed": 1,
+          "workers": 1,
+          "cache_bytes": 67108864,
+          "edge_tree": true,
+          "pair_hints": true,
+          "policy": {
+            "stock_area": 0.32,
+            "box_area": 0.58,
+            "extent": 0.1,
+            "rect_waste": 0.3,
+            "rect_height": 0.12,
+            "contact_rate": 0.28,
+            "gap_trials": 120,
+            "rebuild_size": 8,
+            "blocker_weight": 0.36,
+            "restarts": 5,
+            "slide_sweeps": 3,
+            "late_length": 0,
+            "separate_moves": 600,
+            "best_of": 1,
+            "pocket_trials": 16,
+            "rescue_after": 2
+          },
+          "features": {
+            "slide": true,
+            "pockets": true,
+            "late_acceptance": true,
+            "separate": true,
+            "share": true
+          }
+        },
+        "termination": "time-limit",
+        "requested_seconds": 65.0,
+        "runtime_s": 64.276280355,
+        "cumulative_s": 64.276280355,
+        "preprocess_s": 0.144443676,
+        "overshoot_s": 0.0,
+        "requested_proposals": null,
+        "proposals": 17571216,
+        "cumulative_proposals": 17571216,
+        "first_complete_s": null,
+        "best": {
+          "strict_valid": true,
+          "complete": false,
+          "seated": 1155,
+          "available": 1184,
+          "area": 1442276.2363500025,
+          "coverage": 50.07903598437509,
+          "available_fraction": 0.9633422649609479,
+          "certified_gap": 3.000001,
+          "pair_checks": 2516,
+          "checked_all": true,
+          "violations": []
+        },
+        "certified_answer_written": true,
+        "candidate_validations": 203,
+        "superseded_candidates": 162,
+        "stats": {
+          "kernel": {
+            "candidates": 17571216,
+            "pairs": 28993952,
+            "nodes": 745001341,
+            "ray_nodes": 177948804,
+            "edges": 90046100,
+            "disc_rejections": 2055320,
+            "orientations": 2002895,
+            "cache_hits": 3376282,
+            "cache_peak_bytes": 67108864
+          },
+          "attempts": 5,
+          "rectangle_insertions": 1795,
+          "gap_insertions": 3711,
+          "move_trials": 12276516,
+          "moves": 1842,
+          "rebuild_trials": 10579,
+          "rebuilds": 232,
+          "repair_trials": 0,
+          "repairs": 0,
+          "fcmaes_evaluations": 0,
+          "slides": 7634,
+          "pocket_trials": 86368,
+          "pocket_insertions": 10,
+          "late_accepts": 0,
+          "separation_trials": 124,
+          "separations": 0,
+          "separation_moves": 8836,
+          "migrations": 0,
+          "persistent_rounds": 281,
+          "incumbent_resets": 0
+        }
+      },
+      "strict": {
+        "strict_valid": true,
+        "complete": false,
+        "seated": 1155,
+        "available": 1184,
+        "area": 1442276.2363500025,
+        "coverage": 50.07903598437509,
+        "available_fraction": 0.9633422649609479,
+        "certified_gap": 3.000001,
+        "pair_checks": 2516,
+        "checked_all": true,
+        "violations": []
+      },
+      "judge": {
+        "author": "budel-craft",
+        "below_target": {
+          "half": 0,
+          "quarter": 0,
+          "target": 0
+        },
+        "border_free_share": 34.0,
+        "case": "layered-hard",
+        "coverage": 50.08,
+        "coverage_usable": 53.3,
+        "declared": {
+          "budget": null,
+          "machine": "linux x86_64 (1 search workers)",
+          "runtime_s": 64.275164707
+        },
+        "ink_area": 1442276.2,
+        "pairs_checked": 3467,
+        "regime": "layered",
+        "runtime_s": 19.27,
+        "seated": 1155,
+        "seated_by_class": [
+          {
+            "available": 238,
+            "seated": 227,
+            "size": 124.8
+          },
+          {
+            "available": 2,
+            "seated": 1,
+            "size": 106.1
+          },
+          {
+            "available": 1,
+            "seated": 1,
+            "size": 76.6
+          },
+          {
+            "available": 87,
+            "seated": 74,
+            "size": 74.9
+          },
+          {
+            "available": 149,
+            "seated": 146,
+            "size": 44.9
+          },
+          {
+            "available": 281,
+            "seated": 280,
+            "size": 27.0
+          },
+          {
+            "available": 426,
+            "seated": 426,
+            "size": 16.2
+          }
+        ],
+        "shapes": 1184,
+        "tightest": 3.0,
+        "valid": true,
+        "violations": []
+      },
+      "answer_sha256": "a11e0d44194f62cd83db3f43e75458b9fb3d05774a328e4f0059b377996c30ae",
+      "validation_pending": false,
+      "eligible": true,
+      "strict_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 0.15294815100003234,
+        "cpu_s": 0.14105600000000001,
+        "leader_peak_rss_bytes": 15515648,
+        "sampled_group_peak_rss_bytes": 15515648,
+        "wait4_maxrss_bytes": 77385728,
+        "harness_rss_at_spawn_bytes": 82563072,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      },
+      "judge_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 19.481305329000065,
+        "cpu_s": 18.441791000000002,
+        "leader_peak_rss_bytes": 142409728,
+        "sampled_group_peak_rss_bytes": 142409728,
+        "wait4_maxrss_bytes": 142372864,
+        "harness_rss_at_spawn_bytes": 82563072,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      }
+    },
+    {
+      "spec": {
+        "case": "layered-hard",
+        "case_sha256": "f60887e32e825d46e2b74bac12ed6fded060bf20a8fdf9d2e3ee9797e83d0688",
+        "binary_sha256": "4960464367b82ad93842c67c56ffec8dc26d9a0007529657b81be5b49ce1ba7b",
+        "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+        "algorithm": "lns",
+        "seed": 2,
+        "workers": 1,
+        "seconds": 65,
+        "memory_mib": 1024,
+        "judge_seconds": 240.0,
+        "eval_limit": null,
+        "solver_flags": [],
+        "policy_sha256": null,
+        "reference": true,
+        "engine": "native",
+        "pin_cpu": true,
+        "external_version": null,
+        "adapter_sha256": null
+      },
+      "execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 64.24217023699998,
+        "cpu_s": 60.776466,
+        "leader_peak_rss_bytes": 123248640,
+        "sampled_group_peak_rss_bytes": 123248640,
+        "wait4_maxrss_bytes": 123367424,
+        "harness_rss_at_spawn_bytes": 82563072,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ]
+      },
+      "metrics": {
+        "case": "layered-hard",
+        "case_sha256": "f60887e32e825d46e2b74bac12ed6fded060bf20a8fdf9d2e3ee9797e83d0688",
+        "config_sha256": "3c6d6fcb1f79d253681ee4024a11167cd16673eb696270135af5f1c34c814634",
+        "config": {
+          "algorithm": "lns",
+          "seed": 2,
+          "workers": 1,
+          "cache_bytes": 67108864,
+          "edge_tree": true,
+          "pair_hints": true,
+          "policy": {
+            "stock_area": 0.32,
+            "box_area": 0.58,
+            "extent": 0.1,
+            "rect_waste": 0.3,
+            "rect_height": 0.12,
+            "contact_rate": 0.28,
+            "gap_trials": 120,
+            "rebuild_size": 8,
+            "blocker_weight": 0.36,
+            "restarts": 5,
+            "slide_sweeps": 3,
+            "late_length": 0,
+            "separate_moves": 600,
+            "best_of": 1,
+            "pocket_trials": 16,
+            "rescue_after": 2
+          },
+          "features": {
+            "slide": true,
+            "pockets": true,
+            "late_acceptance": true,
+            "separate": true,
+            "share": true
+          }
+        },
+        "termination": "time-limit",
+        "requested_seconds": 65.0,
+        "runtime_s": 64.230211954,
+        "cumulative_s": 64.230211954,
+        "preprocess_s": 0.140774379,
+        "overshoot_s": 0.0,
+        "requested_proposals": null,
+        "proposals": 20574611,
+        "cumulative_proposals": 20574611,
+        "first_complete_s": null,
+        "best": {
+          "strict_valid": true,
+          "complete": false,
+          "seated": 1165,
+          "available": 1184,
+          "area": 1466532.5328500026,
+          "coverage": 50.9212685017362,
+          "available_fraction": 0.9795438184643254,
+          "certified_gap": 3.000001,
+          "pair_checks": 2638,
+          "checked_all": true,
+          "violations": []
+        },
+        "certified_answer_written": true,
+        "candidate_validations": 235,
+        "superseded_candidates": 235,
+        "stats": {
+          "kernel": {
+            "candidates": 20574611,
+            "pairs": 32921572,
+            "nodes": 856421145,
+            "ray_nodes": 201468237,
+            "edges": 105940551,
+            "disc_rejections": 2240170,
+            "orientations": 2158970,
+            "cache_hits": 3665323,
+            "cache_peak_bytes": 67108864
+          },
+          "attempts": 5,
+          "rectangle_insertions": 1690,
+          "gap_insertions": 3857,
+          "move_trials": 14932865,
+          "moves": 2062,
+          "rebuild_trials": 11636,
+          "rebuilds": 283,
+          "repair_trials": 0,
+          "repairs": 0,
+          "fcmaes_evaluations": 0,
+          "slides": 6343,
+          "pocket_trials": 78967,
+          "pocket_insertions": 16,
+          "late_accepts": 0,
+          "separation_trials": 151,
+          "separations": 2,
+          "separation_moves": 8445,
+          "migrations": 0,
+          "persistent_rounds": 350,
+          "incumbent_resets": 0
+        }
+      },
+      "strict": {
+        "strict_valid": true,
+        "complete": false,
+        "seated": 1165,
+        "available": 1184,
+        "area": 1466532.5328500026,
+        "coverage": 50.9212685017362,
+        "available_fraction": 0.9795438184643254,
+        "certified_gap": 3.000001,
+        "pair_checks": 2638,
+        "checked_all": true,
+        "violations": []
+      },
+      "judge": {
+        "author": "budel-craft",
+        "below_target": {
+          "half": 0,
+          "quarter": 0,
+          "target": 0
+        },
+        "border_free_share": 33.5,
+        "case": "layered-hard",
+        "coverage": 50.92,
+        "coverage_usable": 54.2,
+        "declared": {
+          "budget": null,
+          "machine": "linux x86_64 (1 search workers)",
+          "runtime_s": 64.228457707
+        },
+        "ink_area": 1466532.5,
+        "pairs_checked": 3602,
+        "regime": "layered",
+        "runtime_s": 19.54,
+        "seated": 1165,
+        "seated_by_class": [
+          {
+            "available": 238,
+            "seated": 235,
+            "size": 124.8
+          },
+          {
+            "available": 2,
+            "seated": 1,
+            "size": 106.1
+          },
+          {
+            "available": 1,
+            "seated": 0,
+            "size": 76.6
+          },
+          {
+            "available": 87,
+            "seated": 74,
+            "size": 74.9
+          },
+          {
+            "available": 149,
+            "seated": 148,
+            "size": 44.9
+          },
+          {
+            "available": 281,
+            "seated": 281,
+            "size": 27.0
+          },
+          {
+            "available": 426,
+            "seated": 426,
+            "size": 16.2
+          }
+        ],
+        "shapes": 1184,
+        "tightest": 3.0,
+        "valid": true,
+        "violations": []
+      },
+      "answer_sha256": "a86a354bbf3610db54d43de2fe91503e792671cab6a125b8061e7960b17e38bd",
+      "validation_pending": false,
+      "eligible": true,
+      "strict_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 0.1685272959999793,
+        "cpu_s": 0.14700399999999997,
+        "leader_peak_rss_bytes": 15773696,
+        "sampled_group_peak_rss_bytes": 15773696,
+        "wait4_maxrss_bytes": 77385728,
+        "harness_rss_at_spawn_bytes": 82563072,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      },
+      "judge_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 19.760392523000064,
+        "cpu_s": 18.834965,
+        "leader_peak_rss_bytes": 142487552,
+        "sampled_group_peak_rss_bytes": 142487552,
+        "wait4_maxrss_bytes": 142487552,
+        "harness_rss_at_spawn_bytes": 82567168,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      }
+    },
+    {
+      "spec": {
+        "case": "layered-hard",
+        "case_sha256": "f60887e32e825d46e2b74bac12ed6fded060bf20a8fdf9d2e3ee9797e83d0688",
+        "binary_sha256": "4960464367b82ad93842c67c56ffec8dc26d9a0007529657b81be5b49ce1ba7b",
+        "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+        "algorithm": "lns",
+        "seed": 3,
+        "workers": 1,
+        "seconds": 65,
+        "memory_mib": 1024,
+        "judge_seconds": 240.0,
+        "eval_limit": null,
+        "solver_flags": [],
+        "policy_sha256": null,
+        "reference": true,
+        "engine": "native",
+        "pin_cpu": true,
+        "external_version": null,
+        "adapter_sha256": null
+      },
+      "execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 64.26931543599994,
+        "cpu_s": 61.164094,
+        "leader_peak_rss_bytes": 122511360,
+        "sampled_group_peak_rss_bytes": 122511360,
+        "wait4_maxrss_bytes": 122589184,
+        "harness_rss_at_spawn_bytes": 82571264,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ]
+      },
+      "metrics": {
+        "case": "layered-hard",
+        "case_sha256": "f60887e32e825d46e2b74bac12ed6fded060bf20a8fdf9d2e3ee9797e83d0688",
+        "config_sha256": "a049d1379f15a5e15efdafb78a50cd728e2ed6fe35b368edb58156573bc30102",
+        "config": {
+          "algorithm": "lns",
+          "seed": 3,
+          "workers": 1,
+          "cache_bytes": 67108864,
+          "edge_tree": true,
+          "pair_hints": true,
+          "policy": {
+            "stock_area": 0.32,
+            "box_area": 0.58,
+            "extent": 0.1,
+            "rect_waste": 0.3,
+            "rect_height": 0.12,
+            "contact_rate": 0.28,
+            "gap_trials": 120,
+            "rebuild_size": 8,
+            "blocker_weight": 0.36,
+            "restarts": 5,
+            "slide_sweeps": 3,
+            "late_length": 0,
+            "separate_moves": 600,
+            "best_of": 1,
+            "pocket_trials": 16,
+            "rescue_after": 2
+          },
+          "features": {
+            "slide": true,
+            "pockets": true,
+            "late_acceptance": true,
+            "separate": true,
+            "share": true
+          }
+        },
+        "termination": "time-limit",
+        "requested_seconds": 65.0,
+        "runtime_s": 64.240410433,
+        "cumulative_s": 64.240410433,
+        "preprocess_s": 0.205368646,
+        "overshoot_s": 0.0,
+        "requested_proposals": null,
+        "proposals": 19941716,
+        "cumulative_proposals": 19941716,
+        "first_complete_s": null,
+        "best": {
+          "strict_valid": true,
+          "complete": false,
+          "seated": 1159,
+          "available": 1184,
+          "area": 1455589.6200500028,
+          "coverage": 50.541306251736216,
+          "available_fraction": 0.9722346982442625,
+          "certified_gap": 3.000001,
+          "pair_checks": 2559,
+          "checked_all": true,
+          "violations": []
+        },
+        "certified_answer_written": true,
+        "candidate_validations": 235,
+        "superseded_candidates": 224,
+        "stats": {
+          "kernel": {
+            "candidates": 19941716,
+            "pairs": 32383876,
+            "nodes": 840880126,
+            "ray_nodes": 208053824,
+            "edges": 101243792,
+            "disc_rejections": 2184644,
+            "orientations": 2280525,
+            "cache_hits": 3683992,
+            "cache_peak_bytes": 67108864
+          },
+          "attempts": 5,
+          "rectangle_insertions": 1739,
+          "gap_insertions": 3808,
+          "move_trials": 14137108,
+          "moves": 2043,
+          "rebuild_trials": 11941,
+          "rebuilds": 290,
+          "repair_trials": 0,
+          "repairs": 0,
+          "fcmaes_evaluations": 0,
+          "slides": 7269,
+          "pocket_trials": 91025,
+          "pocket_insertions": 9,
+          "late_accepts": 0,
+          "separation_trials": 131,
+          "separations": 1,
+          "separation_moves": 8304,
+          "migrations": 0,
+          "persistent_rounds": 332,
+          "incumbent_resets": 0
+        }
+      },
+      "strict": {
+        "strict_valid": true,
+        "complete": false,
+        "seated": 1159,
+        "available": 1184,
+        "area": 1455589.6200500028,
+        "coverage": 50.541306251736216,
+        "available_fraction": 0.9722346982442625,
+        "certified_gap": 3.000001,
+        "pair_checks": 2559,
+        "checked_all": true,
+        "violations": []
+      },
+      "judge": {
+        "author": "budel-craft",
+        "below_target": {
+          "half": 0,
+          "quarter": 0,
+          "target": 0
+        },
+        "border_free_share": 33.9,
+        "case": "layered-hard",
+        "coverage": 50.54,
+        "coverage_usable": 53.79,
+        "declared": {
+          "budget": null,
+          "machine": "linux x86_64 (1 search workers)",
+          "runtime_s": 64.238185423
+        },
+        "ink_area": 1455589.6,
+        "pairs_checked": 3496,
+        "regime": "layered",
+        "runtime_s": 18.95,
+        "seated": 1159,
+        "seated_by_class": [
+          {
+            "available": 238,
+            "seated": 231,
+            "size": 124.8
+          },
+          {
+            "available": 2,
+            "seated": 1,
+            "size": 106.1
+          },
+          {
+            "available": 1,
+            "seated": 1,
+            "size": 76.6
+          },
+          {
+            "available": 87,
+            "seated": 75,
+            "size": 74.9
+          },
+          {
+            "available": 149,
+            "seated": 144,
+            "size": 44.9
+          },
+          {
+            "available": 281,
+            "seated": 281,
+            "size": 27.0
+          },
+          {
+            "available": 426,
+            "seated": 426,
+            "size": 16.2
+          }
+        ],
+        "shapes": 1184,
+        "tightest": 3.0,
+        "valid": true,
+        "violations": []
+      },
+      "answer_sha256": "83347fc3d5d9bdb5a30e39aa23f34f2a10d8f89ce9289c648a3732a60e36eefd",
+      "validation_pending": false,
+      "eligible": true,
+      "strict_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 0.16651519399988501,
+        "cpu_s": 0.144894,
+        "leader_peak_rss_bytes": 15765504,
+        "sampled_group_peak_rss_bytes": 15765504,
+        "wait4_maxrss_bytes": 77393920,
+        "harness_rss_at_spawn_bytes": 82571264,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      },
+      "judge_execution": {
+        "reason": "exit",
+        "exit_code": 0,
+        "wall_s": 19.188122171000032,
+        "cpu_s": 18.12561,
+        "leader_peak_rss_bytes": 142532608,
+        "sampled_group_peak_rss_bytes": 142532608,
+        "wait4_maxrss_bytes": 142532608,
+        "harness_rss_at_spawn_bytes": 82571264,
+        "rss_limit_bytes": 1073741824,
+        "address_space_cap_per_process_bytes": 1073741824,
+        "cpu_slots": 1,
+        "pinned_cpus": [
+          0
+        ],
+        "terminal": true
+      }
+    }
+  ]
+}

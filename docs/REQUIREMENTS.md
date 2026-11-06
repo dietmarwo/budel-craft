@@ -1,6 +1,6 @@
 # Budel case contract
 
-The six supplied JSON files define a fixed stock of polygons and one rectangular sheet per case. Each ID can appear once. The selected collision body is the rest ring or the supplied envelope if requested. The solver treats that body as solid. Paper holes subtract from scoring area and appear in the drawing. Ink holes stay part of the scored area. Open curls and recesses in the outer ring can contain parts of another figure when the clearance check passes.
+The supplied JSON files (the six original cases and the later `extreme` case) define a fixed stock of polygons and one rectangular sheet per case. Each ID can appear once. The selected collision body is the rest ring or the supplied envelope if requested. The solver treats that body as solid. Paper holes subtract from scoring area and appear in the drawing. Ink holes stay part of the scored area. Open curls and recesses in the outer ring can contain parts of another figure when the clearance check passes.
 
 Coordinates use the case's own units. A pose reflects local x when `mirror` is true, rotates around the original local origin in degrees, then translates by `(x,y)`. Every output uses the original case geometry. The `eight` mode permits exact multiples of 45 degrees. The `free` mode allows arbitrary angles.
 

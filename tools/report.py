@@ -60,7 +60,7 @@ def plot(rows, path):
                 best[case] = result
     if not best:
         raise ValueError("plot needs at least one eligible answer")
-    order = ["tiny", "small", "medium", "large", "uniform-hard", "layered-hard"]
+    order = ["tiny", "small", "medium", "large", "uniform-hard", "layered-hard", "extreme"]
     labels = [key for key in order if key in best]
     values = [100.0 * min(1.0, best[key]["available_fraction"]) for key in labels]
     fig, ax = plt.subplots(figsize=(8, 3.8), layout="constrained")

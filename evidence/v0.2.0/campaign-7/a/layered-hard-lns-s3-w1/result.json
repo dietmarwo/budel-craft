@@ -1,0 +1,248 @@
+{
+  "spec": {
+    "case": "layered-hard",
+    "case_sha256": "f60887e32e825d46e2b74bac12ed6fded060bf20a8fdf9d2e3ee9797e83d0688",
+    "binary_sha256": "4960464367b82ad93842c67c56ffec8dc26d9a0007529657b81be5b49ce1ba7b",
+    "judge_sha256": "b5de1aa2493cf4fc37fb1cfb6bc40f670afe2cd51da36ac39cd0ccb788cf8b19",
+    "algorithm": "lns",
+    "seed": 3,
+    "workers": 1,
+    "seconds": 65,
+    "memory_mib": 1024,
+    "judge_seconds": 240.0,
+    "eval_limit": null,
+    "solver_flags": [],
+    "policy_sha256": null,
+    "reference": true,
+    "engine": "native",
+    "pin_cpu": true,
+    "external_version": null,
+    "adapter_sha256": null
+  },
+  "execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 64.26931543599994,
+    "cpu_s": 61.164094,
+    "leader_peak_rss_bytes": 122511360,
+    "sampled_group_peak_rss_bytes": 122511360,
+    "wait4_maxrss_bytes": 122589184,
+    "harness_rss_at_spawn_bytes": 82571264,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      0
+    ]
+  },
+  "metrics": {
+    "case": "layered-hard",
+    "case_sha256": "f60887e32e825d46e2b74bac12ed6fded060bf20a8fdf9d2e3ee9797e83d0688",
+    "config_sha256": "a049d1379f15a5e15efdafb78a50cd728e2ed6fe35b368edb58156573bc30102",
+    "config": {
+      "algorithm": "lns",
+      "seed": 3,
+      "workers": 1,
+      "cache_bytes": 67108864,
+      "edge_tree": true,
+      "pair_hints": true,
+      "policy": {
+        "stock_area": 0.32,
+        "box_area": 0.58,
+        "extent": 0.1,
+        "rect_waste": 0.3,
+        "rect_height": 0.12,
+        "contact_rate": 0.28,
+        "gap_trials": 120,
+        "rebuild_size": 8,
+        "blocker_weight": 0.36,
+        "restarts": 5,
+        "slide_sweeps": 3,
+        "late_length": 0,
+        "separate_moves": 600,
+        "best_of": 1,
+        "pocket_trials": 16,
+        "rescue_after": 2
+      },
+      "features": {
+        "slide": true,
+        "pockets": true,
+        "late_acceptance": true,
+        "separate": true,
+        "share": true
+      }
+    },
+    "termination": "time-limit",
+    "requested_seconds": 65.0,
+    "runtime_s": 64.240410433,
+    "cumulative_s": 64.240410433,
+    "preprocess_s": 0.205368646,
+    "overshoot_s": 0.0,
+    "requested_proposals": null,
+    "proposals": 19941716,
+    "cumulative_proposals": 19941716,
+    "first_complete_s": null,
+    "best": {
+      "strict_valid": true,
+      "complete": false,
+      "seated": 1159,
+      "available": 1184,
+      "area": 1455589.6200500028,
+      "coverage": 50.541306251736216,
+      "available_fraction": 0.9722346982442625,
+      "certified_gap": 3.000001,
+      "pair_checks": 2559,
+      "checked_all": true,
+      "violations": []
+    },
+    "certified_answer_written": true,
+    "candidate_validations": 235,
+    "superseded_candidates": 224,
+    "stats": {
+      "kernel": {
+        "candidates": 19941716,
+        "pairs": 32383876,
+        "nodes": 840880126,
+        "ray_nodes": 208053824,
+        "edges": 101243792,
+        "disc_rejections": 2184644,
+        "orientations": 2280525,
+        "cache_hits": 3683992,
+        "cache_peak_bytes": 67108864
+      },
+      "attempts": 5,
+      "rectangle_insertions": 1739,
+      "gap_insertions": 3808,
+      "move_trials": 14137108,
+      "moves": 2043,
+      "rebuild_trials": 11941,
+      "rebuilds": 290,
+      "repair_trials": 0,
+      "repairs": 0,
+      "fcmaes_evaluations": 0,
+      "slides": 7269,
+      "pocket_trials": 91025,
+      "pocket_insertions": 9,
+      "late_accepts": 0,
+      "separation_trials": 131,
+      "separations": 1,
+      "separation_moves": 8304,
+      "migrations": 0,
+      "persistent_rounds": 332,
+      "incumbent_resets": 0
+    }
+  },
+  "strict": {
+    "strict_valid": true,
+    "complete": false,
+    "seated": 1159,
+    "available": 1184,
+    "area": 1455589.6200500028,
+    "coverage": 50.541306251736216,
+    "available_fraction": 0.9722346982442625,
+    "certified_gap": 3.000001,
+    "pair_checks": 2559,
+    "checked_all": true,
+    "violations": []
+  },
+  "judge": {
+    "author": "budel-craft",
+    "below_target": {
+      "half": 0,
+      "quarter": 0,
+      "target": 0
+    },
+    "border_free_share": 33.9,
+    "case": "layered-hard",
+    "coverage": 50.54,
+    "coverage_usable": 53.79,
+    "declared": {
+      "budget": null,
+      "machine": "linux x86_64 (1 search workers)",
+      "runtime_s": 64.238185423
+    },
+    "ink_area": 1455589.6,
+    "pairs_checked": 3496,
+    "regime": "layered",
+    "runtime_s": 18.95,
+    "seated": 1159,
+    "seated_by_class": [
+      {
+        "available": 238,
+        "seated": 231,
+        "size": 124.8
+      },
+      {
+        "available": 2,
+        "seated": 1,
+        "size": 106.1
+      },
+      {
+        "available": 1,
+        "seated": 1,
+        "size": 76.6
+      },
+      {
+        "available": 87,
+        "seated": 75,
+        "size": 74.9
+      },
+      {
+        "available": 149,
+        "seated": 144,
+        "size": 44.9
+      },
+      {
+        "available": 281,
+        "seated": 281,
+        "size": 27.0
+      },
+      {
+        "available": 426,
+        "seated": 426,
+        "size": 16.2
+      }
+    ],
+    "shapes": 1184,
+    "tightest": 3.0,
+    "valid": true,
+    "violations": []
+  },
+  "answer_sha256": "83347fc3d5d9bdb5a30e39aa23f34f2a10d8f89ce9289c648a3732a60e36eefd",
+  "validation_pending": false,
+  "eligible": true,
+  "strict_execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 0.16651519399988501,
+    "cpu_s": 0.144894,
+    "leader_peak_rss_bytes": 15765504,
+    "sampled_group_peak_rss_bytes": 15765504,
+    "wait4_maxrss_bytes": 77393920,
+    "harness_rss_at_spawn_bytes": 82571264,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      0
+    ],
+    "terminal": true
+  },
+  "judge_execution": {
+    "reason": "exit",
+    "exit_code": 0,
+    "wall_s": 19.188122171000032,
+    "cpu_s": 18.12561,
+    "leader_peak_rss_bytes": 142532608,
+    "sampled_group_peak_rss_bytes": 142532608,
+    "wait4_maxrss_bytes": 142532608,
+    "harness_rss_at_spawn_bytes": 82571264,
+    "rss_limit_bytes": 1073741824,
+    "address_space_cap_per_process_bytes": 1073741824,
+    "cpu_slots": 1,
+    "pinned_cpus": [
+      0
+    ],
+    "terminal": true
+  }
+}

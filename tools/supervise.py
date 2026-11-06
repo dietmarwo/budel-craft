@@ -35,8 +35,27 @@ def group_rss(group):
     return pages * os.sysconf("SC_PAGE_SIZE")
 
 
+def status_bytes(pid, field):
+    """A memory field of /proc/PID/status in bytes, or 0 if unavailable."""
+    try:
+        for line in Path(f"/proc/{pid}/status").read_text().splitlines():
+            if line.startswith(field + ":"):
+                return int(line.split()[1]) * 1024
+    except (OSError, IndexError, ValueError):
+        pass
+    return 0
+
+
 def run(command, *, cwd, wall_s, log, memory_mib=1024, env=None, log_mib=4, cpu_slots=None, cpu_offset=0):
-    """Run argv without a shell. Collect wait4 CPU/RSS and sampled group RSS."""
+    """Run argv without a shell. Collect wait4 CPU time, the leader's post-exec peak RSS
+    and sampled group RSS.
+
+    wait4's ru_maxrss also counts the forked copy of this Python process before exec,
+    so it grows with whatever the harness holds (for example a large parsed case).
+    It is reported as `wait4_maxrss_bytes` and not used for limits. The leader's
+    VmHWM belongs to the exec'd image only; it is polled every 2 ms for the first
+    200 ms and every 25 ms afterwards, so growth in the final interval can be missed.
+    """
     if not Path("/proc/self/stat").exists():
         raise RuntimeError("the benchmark supervisor requires Linux /proc")
     log = Path(log)
@@ -65,8 +84,11 @@ def run(command, *, cwd, wall_s, log, memory_mib=1024, env=None, log_mib=4, cpu_
         if pinned is not None:
             os.sched_setaffinity(0, pinned)
 
+    harness_rss = status_bytes(os.getpid(), "VmRSS")
     started = time.monotonic()
     peak = 0
+    leader_hwm = 0
+    next_group_sample = started
     reason = "exit"
     with log.open("wb") as output:
         child = subprocess.Popen(
@@ -87,7 +109,13 @@ def run(command, *, cwd, wall_s, log, memory_mib=1024, env=None, log_mib=4, cpu_
                 if pid:
                     child.returncode = os.waitstatus_to_exitcode(status)
                     break
-                peak = max(peak, group_rss(child.pid))
+                # Popen returns after exec, so every sample here is of the solver image.
+                leader_hwm = max(leader_hwm, status_bytes(child.pid, "VmHWM"))
+                now = time.monotonic()
+                if now >= next_group_sample:
+                    peak = max(peak, group_rss(child.pid))
+                    next_group_sample = now + 0.025
+                peak = max(peak, leader_hwm)
                 if reason == "exit":
                     if time.monotonic() - started >= wall_s:
                         reason = "wall-limit"
@@ -100,7 +128,7 @@ def run(command, *, cwd, wall_s, log, memory_mib=1024, env=None, log_mib=4, cpu_
                         kill_deadline = time.monotonic() + 2.0
                 elif time.monotonic() >= kill_deadline:
                     raise TimeoutError(f"could not reap supervised group {child.pid}")
-                time.sleep(0.025)
+                time.sleep(0.002 if time.monotonic() - started < 0.2 else 0.025)
         finally:
             kill_group()
             if child.returncode is None:
@@ -109,7 +137,6 @@ def run(command, *, cwd, wall_s, log, memory_mib=1024, env=None, log_mib=4, cpu_
                 except subprocess.TimeoutExpired:
                     pass
 
-    peak = max(peak, usage.ru_maxrss * 1024)
     if reason == "exit" and peak > memory:
         reason = "rss-limit"
     if reason == "exit" and log.stat().st_size > log_mib * 1024 * 1024:
@@ -118,8 +145,10 @@ def run(command, *, cwd, wall_s, log, memory_mib=1024, env=None, log_mib=4, cpu_
         "reason": reason, "exit_code": child.returncode,
         "wall_s": time.monotonic() - started,
         "cpu_s": usage.ru_utime + usage.ru_stime,
-        "leader_peak_rss_bytes": usage.ru_maxrss * 1024,
+        "leader_peak_rss_bytes": leader_hwm,
         "sampled_group_peak_rss_bytes": peak,
+        "wait4_maxrss_bytes": usage.ru_maxrss * 1024,
+        "harness_rss_at_spawn_bytes": harness_rss,
         "rss_limit_bytes": memory, "address_space_cap_per_process_bytes": memory,
         "cpu_slots": cpu_slots,
         "pinned_cpus": pinned,

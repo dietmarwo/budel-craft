@@ -13,7 +13,7 @@ import time
 from supervise import atomic_json, run
 
 ROOT = Path(__file__).resolve().parents[1]
-NAMES = ("tiny", "small", "medium", "large", "uniform-hard", "layered-hard")
+NAMES = ("tiny", "small", "medium", "large", "uniform-hard", "layered-hard", "extreme")
 CPU_OFFSET = 0
 
 

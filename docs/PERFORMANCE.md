@@ -4,27 +4,32 @@ All 0.2.0 measurements ran on a 2-vCPU sandbox (Intel Xeon @ 2.10 GHz, Linux 6.1
 
 ## Final campaign
 
-Default `lns` configuration, interactive budgets, seeds 1–3, one worker pinned to one CPU. Records: `evidence/v0.2.0/campaign/a` and `b`; summary: `evidence/v0.2.0/SUMMARY.md`. Every run exited normally before its budget, and every answer passed both the native strict validator and the Python judge.
+Default `lns` configuration, the seven cases (six original plus `extreme`), interactive budgets, seeds 1–3, one worker pinned to one CPU. The solver binary is the 0.2.0 build (`4960464367b8…`). Records: `evidence/v0.2.0/campaign-7/a` and `b`; summary: `evidence/v0.2.0/SUMMARY.md`. Every run exited normally before its budget, and every answer passed both the native strict validator and the Python judge.
 
 | Case | Budget s | Seated, seeds 1/2/3 | Sheet coverage, seeds 1/2/3 | Median | Stock bound | Both validators | Max wall s | Peak RSS MiB |
 | --- | ---: | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| tiny | 1 | 2/2/2 of 2 | 5.0000% (all) | 5.0000% | 5.0000% | 3/3 | 0.04 | 77.1 |
-| small | 6 | 40/40/40 of 40 | 23.2899% (all) | 23.2899% | 23.2899% | 3/3 | 0.07 | 77.1 |
-| medium | 14 | 311/311/308 of 312 | 51.5666 / 51.5658 / 51.3097% | 51.5658% | 51.5850% | 3/3 | 13.68 | 88.1 |
-| large | 92 | 2,127/2,127/2,127 of 2,127 | 47.8051% (all) | 47.8051% | 47.8051% | 3/3 | 0.49 | 77.1 |
-| uniform-hard | 56 | 1,008/1,008/1,008 of 1,008 | 26.9808% (all) | 26.9808% | 26.9808% | 3/3 | 0.22 | 77.1 |
-| layered-hard | 65 | 1,154/1,153/1,156 of 1,184 | 49.9825 / 50.5702 / 50.2949% | 50.2949% | 51.9847% | 3/3 | 64.40 | 118.3 |
+| tiny | 1 | 2/2/2 of 2 | 5.0000% (all) | 5.0000% | 5.0000% | 3/3 | 0.01 | ≥ 3.8* |
+| small | 6 | 40/40/40 of 40 | 23.2899% (all) | 23.2899% | 23.2899% | 3/3 | 0.02 | 10.9 |
+| medium | 14 | 312/312/310 of 312 | 51.5850 / 51.5850 / 51.3630% | 51.5850% | 51.5850% | 3/3 | 13.63 | 88.4 |
+| large | 92 | 2,127/2,127/2,127 of 2,127 | 47.8051% (all) | 47.8051% | 47.8051% | 3/3 | 0.29 | 56.5 |
+| uniform-hard | 56 | 1,008/1,008/1,008 of 1,008 | 26.9808% (all) | 26.9808% | 26.9808% | 3/3 | 0.18 | 28.8 |
+| layered-hard | 65 | 1,155/1,165/1,159 of 1,184 | 50.0790 / 50.9213 / 50.5413% | 50.5413% | 51.9847% | 3/3 | 64.30 | 118.4 |
+| extreme | 184 | 3,309/3,309/3,309 of 3,309 | 21.8973% (all) | 21.8973% | 21.8973% | 3/3 | 1.13 | 174.9 |
+
+Peak RSS is the solver's own high-water mark after `exec` (see the user manual). \*Tiny exits in about 10 ms; on two of its three seeds it finished before the first sample, so its value is a lower bound. The raw `wait4` value, still recorded as `wait4_maxrss_bytes`, is about 172 MiB for every run in the harness process that had loaded `extreme`, because it includes the forked copy of the harness.
+
+Medium seats all 312 figures (its stock bound) on seeds 1 and 2; seed 3 leaves out two figures of class 105.9. Layered-hard is 1.06–1.91 points below its stock bound; its feasible optimum is unknown. `extreme` has 3,309 figures (606,594 vertices) whose total area is 21.90% of the sheet; every seed seats all of them in about 1 s.
 
 ### Same host and binary: 0.1.0 search versus 0.2.0
 
-`multistart` reproduces the 0.1.0 search (strict validation only). Records: `evidence/v0.2.0/campaign/ms`.
+`multistart` reproduces the 0.1.0 search (strict validation only, records `evidence/v0.2.0/campaign/ms`). The `lns` column is the seven-case campaign above; both arms used the same binary on the same host.
 
 | Case | `multistart`, seeds 1/2/3 | Mean | `lns` default, seeds 1/2/3 | Mean | Gain |
 | --- | --- | ---: | --- | ---: | ---: |
-| medium | 47.53 / 47.19 / 47.32% | 47.34% | 51.57 / 51.57 / 51.31% | 51.48% | +4.14 points |
-| layered-hard | 46.26 / 46.18 / 46.35% | 46.26% | 49.98 / 50.57 / 50.29% | 50.28% | +4.02 points |
+| medium | 47.53 / 47.19 / 47.32% | 47.34% | 51.59 / 51.59 / 51.36% | 51.51% | +4.17 points |
+| layered-hard | 46.26 / 46.18 / 46.35% | 46.26% | 50.08 / 50.92 / 50.54% | 50.51% | +4.25 points |
 
-Medium leaves out one figure of size class 63.5 on seeds 1 and 2, and four figures (two of class 105.9, two of class 63.5) on seed 3. An earlier campaign with the pre-release binary (before rustfmt, the Clippy fixes and the resume change; `evidence/v0.2.0/prerelease-campaign`) seated all 312 figures on seeds 1 and 2, so the medium bound is reachable within its 14 s budget. Layered-hard still has 1.4–2.0 points to its stock bound; its feasible optimum is unknown.
+The first 0.2.0 final campaign (six cases, `evidence/v0.2.0/campaign/a` and `b`, same binary) gave medium 51.57 / 51.57 / 51.31% and layered-hard 49.98 / 50.57 / 50.29%. Its memory column used the inflated `wait4` value.
 
 ## Ablations
 

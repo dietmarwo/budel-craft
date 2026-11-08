@@ -77,7 +77,7 @@ The 14 s medium arms, the 6 s medium arms other than `m6-gated`, and the layered
 
 ## Policy tuning
 
-`budel tune` on medium, 1,200,000 proposals per trial, 5 training seeds (11–15) per candidate, 5 held-out seeds, 16 evaluations per method. Raw reports are in `evidence/v0.2.0/tuning/`. Values are mean percentages of available stock area.
+`budel tune` on medium, 1,200,000 proposals per trial, 5 training seeds (11–15) per candidate, 5 held-out seeds, 16 evaluations per method. The raw 0.2.0 tuning reports are not in the repository (the `evidence/experiments/tune-*.json` records are from 0.1.0); the implementation log (I34) summarizes the result. Values are mean percentages of available stock area.
 
 | Method | Selected on training | Default on training | Selected on held-out | Default on held-out |
 | --- | ---: | ---: | ---: | ---: |

@@ -86,6 +86,8 @@ The 14 s medium arms, the 6 s medium arms other than `m6-gated`, and the layered
 
 BiteOpt's selection did not hold up on the held-out seeds, and random search found nothing better than the default, so the default policy is unchanged. The per-seed spread of one policy (about 0.5–1.3 points) exceeds the differences between the better candidates at this evaluation budget.
 
+The `fcmaes` feature now builds with fcmaes-core 0.5.0 (27 November 2026). The table records the runs with 0.1.3; they were not repeated.
+
 ## Earlier prototype
 
 The first review patched 0.1.0 with environment switches (`evidence/v0.2.0/prototype-0.1.0-env.json`, same sandbox). Persistent search raised medium at 14 s from 47.53 / 47.19% to 50.96 / 51.10%, and adding slide compaction raised it to 51.18 / 51.19%. On layered-hard at 65 s, seed 1 rose from 46.26% to 49.26% (persistent) and 49.94% (with slide). The 0.2.0 implementation replaces the switches with configuration fields and adds the components above.
